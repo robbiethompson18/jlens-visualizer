@@ -18,6 +18,7 @@ from matplotlib.axes import Axes
 # Categorical slots from the dataviz skill's validated palette. Colour follows the word's role,
 # so the answer and the intermediate keep their colour in every panel.
 ROLE_COLORS = {"prompt": ["#2a78d6", "#1baf7a"], "intermediate": ["#eb6834", "#e87ba4", "#008300"], "target": ["#eda100"]}
+ROLE_LABELS = {"prompt": "prompt word", "intermediate": "hidden intermediate", "target": "answer"}
 SURFACE, INK, MUTED_INK, GRID = "#fcfcfb", "#1a1a19", "#6b6a63", "#e6e5df"
 
 readout = json.loads(Path(sys.argv[1]).read_text())
@@ -37,24 +38,12 @@ def is_correct(item: dict) -> bool:
 
 
 def plot_item(ax: Axes, item: dict, *, compact: bool) -> None:
-    series = [(word, color, item["words"][word]["jlens"]["logit"]) for word, color in words_to_plot(item)]
-    for word, color, logits in series:
-        ax.plot(layers, logits, color=color, linewidth=2, label=word, solid_capstyle="round")
-    ax.margins(y=0.2)
-    # Label each line at its peak, in ink, so identity never rests on color alone.
-    # Lift a label that would land on an earlier one.
-    label_height = (ax.get_ylim()[1] - ax.get_ylim()[0]) * (0.1 if compact else 0.06)
-    placed: list[tuple[int, float]] = []
-    for word, _, logits in sorted(series, key=lambda entry: max(entry[2])):
-        peak = max(range(len(layers)), key=lambda index: logits[index])
-        y = logits[peak]
-        while any(abs(layers[peak] - x) < 5 and abs(y - other_y) < label_height for x, other_y in placed):
-            y += label_height
-        placed.append((layers[peak], y))
-        ax.annotate(
-            word, (layers[peak], y), xytext=(0, 4), textcoords="offset points",
-            ha="center", color=INK, fontsize=8 if compact else 10, fontweight="bold",
-        )  # fmt: skip
+    for word, color in words_to_plot(item):
+        role = ROLE_LABELS[item["words"][word]["role"]]
+        ax.plot(layers, item["words"][word]["jlens"]["logit"], color=color, linewidth=2, label=f"{word} ({role})", solid_capstyle="round")
+    # Full-size graphs put the legend beside the plot so it never covers a line.
+    legend_anchor = (0, 1) if compact else (1.01, 1)
+    ax.legend(frameon=False, fontsize=6 if compact else 9, labelcolor=INK, handlelength=1.2, loc="upper left", bbox_to_anchor=legend_anchor)
     ax.set_facecolor(SURFACE)
     ax.grid(axis="y", color=GRID, linewidth=1)
     ax.set_axisbelow(True)
@@ -71,14 +60,13 @@ output_dir.mkdir(parents=True, exist_ok=True)
 model_label = readout["model"].split("/")[-1]
 
 for item in readout["items"]:
-    fig, ax = plt.subplots(figsize=(8, 4.5), facecolor=SURFACE)
+    fig, ax = plt.subplots(figsize=(10, 4.5), facecolor=SURFACE)
     plot_item(ax, item, compact=False)
     verdict = "correct" if is_correct(item) else f"wrong, answer is {item['target']}"
     ax.set_xlabel(f"layer ({model_label}; its top next token is {item['model_top5'][0].strip()!r}: {verdict})", color=MUTED_INK, fontsize=9)
     ax.set_ylabel("J-lens logit", color=MUTED_INK, fontsize=9)
-    ax.legend(frameon=False, fontsize=9, labelcolor=INK, loc="upper left")
     fig.tight_layout()
-    fig.savefig(output_dir / f"{item['name']}.png", dpi=150)
+    fig.savefig(output_dir / f"{item['name']}.png", dpi=110)
     plt.close(fig)
 
 correct_items = [item for item in readout["items"] if is_correct(item)]
