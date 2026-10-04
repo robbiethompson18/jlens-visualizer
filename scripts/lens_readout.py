@@ -10,6 +10,9 @@ Needs a GPU with ~20 GB for a 7B model:
     uv sync --group pod
     uv run python scripts/lens_readout.py Qwen/Qwen2.5-7B-Instruct \
         anicka/jlens-qwen2.5-7b-instruct qwen2.5-7b-instruct_jlens.pt
+
+On a shared cloud GPU host set OMP_NUM_THREADS=8: torch otherwise spawns a CPU thread per host core
+and the per-word log-softmax bookkeeping below crawls (Qwen3.6-27B: stalled for 5+ min vs ~2 min total).
 """
 
 import json
