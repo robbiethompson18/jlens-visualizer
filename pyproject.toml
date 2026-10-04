@@ -3,7 +3,9 @@ name = "jlens-visualizer"
 version = "0.1.0"
 description = "Per-layer J-lens (Jacobian lens) logit graphs for multi-hop prompts like 'how many legs does the creature that makes webs have'"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -21,8 +23,16 @@ extend-select = [
   "E501",  # line too long — not in ruff's defaults, and `ruff format` never wraps strings/comments
 ]
 
+[tool.uv.sources]
+jlens = { git = "https://github.com/anthropics/jacobian-lens" }
+
 [dependency-groups]
 dev = [
     "ruff>=0.16.10",
     "ty>=0.0.84",
+]
+pod = [
+    "jlens",
+    "torch>=2.14.1",
+    "transformers>=5.5",
 ]
