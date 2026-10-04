@@ -29,6 +29,7 @@ def stir_positions(item: dict) -> list[int]:
     for token in item["tokens"]:
         token_starts.append(token_starts[-1] + len(token))
     stirs = re.search(r"one at a time: (.*)\.", text)
+    assert stirs, f"{item['name']}: no stir list"
     positions = []
     for word in re.finditer(r"\w+", stirs.group(1)):
         if word.group() == "then":

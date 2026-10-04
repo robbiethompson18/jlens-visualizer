@@ -16,6 +16,7 @@ each file records its answer `alphabet`, so a word can be ranked against the oth
 
 import json
 import random
+from collections.abc import Callable
 from pathlib import Path
 
 COLORS = ["red", "blue", "green", "gold", "black", "white", "pink", "gray", "purple", "brown"]
@@ -61,7 +62,7 @@ def brew_item(rng: random.Random, depth: int) -> tuple[str, list[str], list[str]
     return problem, states, [rule_line[state] for state in states[:-1]]
 
 
-def chain_step(rng: random.Random) -> tuple[str, object]:
+def chain_step(rng: random.Random) -> tuple[str, Callable[[int], int]]:
     """A non-affine update rule over 1..MOD, as (text, function)."""
     kind = rng.choice(["halve", "parity", "threshold"])
     if kind == "halve":

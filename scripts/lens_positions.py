@@ -92,7 +92,7 @@ def read_item(item: dict, alphabet: list[list[int]]) -> dict:
         model.forward(input_ids)
     model_logits = model.unembed(recorder.activations[final_layer][0, read_position].float()).float()
 
-    words = {
+    words: dict[str, dict] = {
         word: {"role": role, "ids": single_token_ids(word), "rank": [], "alphabet_rank": []} for word, role in tracked_words(item).items()
     }
     for layer in layers:
