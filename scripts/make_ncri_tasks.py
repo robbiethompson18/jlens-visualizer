@@ -3,6 +3,8 @@
 Text format, instruction and 1-shot layout copy github.com/neelnanda-io/nocot-bench (MIT), but the
 items are new draws from our own seed, so none of the sealed benchmark items end up in this public repo.
 Every state along an item's trajectory is distinct, so each step gets its own line on a lens graph.
+Each item also records `lookups`, the prompt line that computes each step (so plots can mark it), and
+each file records its answer `alphabet`, so a word can be ranked against the other possible answers.
 
 - brew: a 10-colour x 3-ingredient rewrite table, a start colour, then 1-3 stirs. Colours are single
   Qwen tokens. Intermediates = the colour after each stir but the last.
@@ -31,8 +33,8 @@ ITEMS_PER_DEPTH = 20
 DEPTHS = [1, 2, 3]
 
 
-def brew_item(rng: random.Random, depth: int) -> tuple[str, list[str]]:
-    """Problem text and the colour trajectory [start, after stir 1, ..., final]."""
+def brew_item(rng: random.Random, depth: int) -> tuple[str, list[str], list[str]]:
+    """Problem text, the colour trajectory [start, after stir 1, ..., final], and the rule line each stir reads."""
     while True:
         ingredients = sorted(rng.sample(INGREDIENTS, 3))
         rules = {color: {ing: rng.choice([c for c in COLORS if c != color]) for ing in ingredients} for color in COLORS}
@@ -42,11 +44,12 @@ def brew_item(rng: random.Random, depth: int) -> tuple[str, list[str]]:
             states.append(rules[states[-1]][stir])
         if len(set(states)) == len(states):
             break
-    rule_lines = [
-        f"A {color} potion turns {rules[color][ingredients[0]]} with {ingredients[0]}, "
+    rule_line = {
+        color: f"A {color} potion turns {rules[color][ingredients[0]]} with {ingredients[0]}, "
         f"{rules[color][ingredients[1]]} with {ingredients[1]}, and {rules[color][ingredients[2]]} with {ingredients[2]}."
-        for color in rng.sample(COLORS, len(COLORS))
-    ]
+        for color in COLORS
+    }
+    rule_lines = [rule_line[color] for color in rng.sample(COLORS, len(COLORS))]
     problem = "\n".join(
         [
             "A potion changes color each time an ingredient is stirred in. The rules:",
@@ -55,7 +58,7 @@ def brew_item(rng: random.Random, depth: int) -> tuple[str, list[str]]:
             "What color is the potion at the end?",
         ]
     )
-    return problem, states
+    return problem, states, [rule_line[state] for state in states[:-1]]
 
 
 def chain_step(rng: random.Random) -> tuple[str, object]:
@@ -70,8 +73,8 @@ def chain_step(rng: random.Random) -> tuple[str, object]:
     return f"If it is bigger than 5, subtract {k}; otherwise double it.", lambda v, k=k: v - k if v > 5 else 2 * v
 
 
-def chain_item(rng: random.Random, depth: int) -> tuple[str, list[str]]:
-    """Problem text and the number trajectory [start, after step 1, ..., final], as strings."""
+def chain_item(rng: random.Random, depth: int) -> tuple[str, list[str], list[str]]:
+    """Problem text, the number trajectory [start, after step 1, ..., final] as strings, and each step's line."""
     while True:
         states = [rng.randint(1, MOD)]
         step_texts = []
@@ -91,22 +94,22 @@ def chain_item(rng: random.Random, depth: int) -> tuple[str, list[str]]:
             "What is the final number?",
         ]
     )
-    return problem, [str(state) for state in states]
+    return problem, [str(state) for state in states], step_texts
 
 
-def build(task: str, make_item, instruction: str, target_prefix: str) -> None:
+def build(task: str, make_item, instruction: str, target_prefix: str, alphabet: list[str]) -> None:
     """Writes data/<task>.json in lens-eval-multihop.json's shape: name, prompt, target, intermediates.
 
     The answer is read at the token before it, so a colour (single token with its leading space) goes
     in the target, while a digit's leading space is its own Qwen token and stays in the prompt.
     """
     rng = random.Random(f"jlens-visualizer|{task}")
-    shot_problem, shot_states = make_item(rng, 2)
+    shot_problem, shot_states, _ = make_item(rng, 2)
     shot = f"{instruction}\n\n{shot_problem}\nAnswer: {shot_states[-1]}\n\n"
     items = []
     for depth in DEPTHS:
         for index in range(ITEMS_PER_DEPTH):
-            problem, states = make_item(rng, depth)
+            problem, states, lookups = make_item(rng, depth)
             items.append(
                 {
                     "name": f"{task}-d{depth}-{index:02d}",
@@ -114,13 +117,14 @@ def build(task: str, make_item, instruction: str, target_prefix: str) -> None:
                     "target": states[-1] if target_prefix else " " + states[-1],
                     "start": states[0],
                     "intermediates": states[1:-1],
+                    "lookups": lookups,
                     "depth": depth,
                 }
             )
     path = Path(f"data/{task}.json")
-    path.write_text(json.dumps({"items": items}, indent=1))
+    path.write_text(json.dumps({"alphabet": alphabet, "items": items}, indent=1))
     print(f"wrote {len(items)} items to {path}")
 
 
-build("brew", brew_item, BREW_INSTRUCTION, target_prefix="")
-build("chain9", chain_item, CHAIN_INSTRUCTION, target_prefix=" ")
+build("brew", brew_item, BREW_INSTRUCTION, target_prefix="", alphabet=COLORS)
+build("chain9", chain_item, CHAIN_INSTRUCTION, target_prefix=" ", alphabet=[str(n) for n in range(1, MOD + 1)])

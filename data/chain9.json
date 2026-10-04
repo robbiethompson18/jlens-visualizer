@@ -1,4 +1,15 @@
 {
+ "alphabet": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9"
+ ],
  "items": [
   {
    "name": "chain9-d1-00",
@@ -6,6 +17,9 @@
    "target": "7",
    "start": "1",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 6."
+   ],
    "depth": 1
   },
   {
@@ -14,6 +28,9 @@
    "target": "5",
    "start": "9",
    "intermediates": [],
+   "lookups": [
+    "Halve it, rounding up."
+   ],
    "depth": 1
   },
   {
@@ -22,6 +39,9 @@
    "target": "4",
    "start": "7",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -30,6 +50,9 @@
    "target": "2",
    "start": "4",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 8."
+   ],
    "depth": 1
   },
   {
@@ -38,6 +61,9 @@
    "target": "4",
    "start": "6",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 2; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -46,6 +72,9 @@
    "target": "5",
    "start": "7",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 2; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -54,6 +83,9 @@
    "target": "5",
    "start": "3",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 2."
+   ],
    "depth": 1
   },
   {
@@ -62,6 +94,9 @@
    "target": "1",
    "start": "2",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 8."
+   ],
    "depth": 1
   },
   {
@@ -70,6 +105,9 @@
    "target": "1",
    "start": "2",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 7."
+   ],
    "depth": 1
   },
   {
@@ -78,6 +116,9 @@
    "target": "7",
    "start": "8",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -86,6 +127,9 @@
    "target": "4",
    "start": "8",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 6."
+   ],
    "depth": 1
   },
   {
@@ -94,6 +138,9 @@
    "target": "4",
    "start": "1",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 3."
+   ],
    "depth": 1
   },
   {
@@ -102,6 +149,9 @@
    "target": "4",
    "start": "8",
    "intermediates": [],
+   "lookups": [
+    "Halve it, rounding up."
+   ],
    "depth": 1
   },
   {
@@ -110,6 +160,9 @@
    "target": "2",
    "start": "4",
    "intermediates": [],
+   "lookups": [
+    "Halve it, rounding up."
+   ],
    "depth": 1
   },
   {
@@ -118,6 +171,9 @@
    "target": "2",
    "start": "4",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 1."
+   ],
    "depth": 1
   },
   {
@@ -126,6 +182,9 @@
    "target": "9",
    "start": "1",
    "intermediates": [],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 8."
+   ],
    "depth": 1
   },
   {
@@ -134,6 +193,9 @@
    "target": "5",
    "start": "7",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 2; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -142,6 +204,9 @@
    "target": "3",
    "start": "5",
    "intermediates": [],
+   "lookups": [
+    "Halve it, rounding up."
+   ],
    "depth": 1
   },
   {
@@ -150,6 +215,9 @@
    "target": "1",
    "start": "2",
    "intermediates": [],
+   "lookups": [
+    "Halve it, rounding up."
+   ],
    "depth": 1
   },
   {
@@ -158,6 +226,9 @@
    "target": "4",
    "start": "7",
    "intermediates": [],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it."
+   ],
    "depth": 1
   },
   {
@@ -167,6 +238,10 @@
    "start": "8",
    "intermediates": [
     "5"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 1."
    ],
    "depth": 2
   },
@@ -178,6 +253,10 @@
    "intermediates": [
     "1"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 3."
+   ],
    "depth": 2
   },
   {
@@ -187,6 +266,10 @@
    "start": "9",
    "intermediates": [
     "5"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "If it is bigger than 5, subtract 4; otherwise double it."
    ],
    "depth": 2
   },
@@ -198,6 +281,10 @@
    "intermediates": [
     "9"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 8.",
+    "If it is bigger than 5, subtract 3; otherwise double it."
+   ],
    "depth": 2
   },
   {
@@ -207,6 +294,10 @@
    "start": "8",
    "intermediates": [
     "4"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 5.",
+    "If it is even, halve it; if it is odd, add 5."
    ],
    "depth": 2
   },
@@ -218,6 +309,10 @@
    "intermediates": [
     "7"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 3."
+   ],
    "depth": 2
   },
   {
@@ -227,6 +322,10 @@
    "start": "5",
    "intermediates": [
     "3"
+   ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "If it is bigger than 5, subtract 4; otherwise double it."
    ],
    "depth": 2
   },
@@ -238,6 +337,10 @@
    "intermediates": [
     "8"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 7.",
+    "If it is bigger than 5, subtract 4; otherwise double it."
+   ],
    "depth": 2
   },
   {
@@ -247,6 +350,10 @@
    "start": "6",
    "intermediates": [
     "3"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 1.",
+    "Halve it, rounding up."
    ],
    "depth": 2
   },
@@ -258,6 +365,10 @@
    "intermediates": [
     "6"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is bigger than 5, subtract 1; otherwise double it."
+   ],
    "depth": 2
   },
   {
@@ -267,6 +378,10 @@
    "start": "3",
    "intermediates": [
     "2"
+   ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
    ],
    "depth": 2
   },
@@ -278,6 +393,10 @@
    "intermediates": [
     "7"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 6."
+   ],
    "depth": 2
   },
   {
@@ -287,6 +406,10 @@
    "start": "4",
    "intermediates": [
     "2"
+   ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "If it is even, halve it; if it is odd, add 6."
    ],
    "depth": 2
   },
@@ -298,6 +421,10 @@
    "intermediates": [
     "4"
    ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "If it is even, halve it; if it is odd, add 7."
+   ],
    "depth": 2
   },
   {
@@ -307,6 +434,10 @@
    "start": "7",
    "intermediates": [
     "4"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 6.",
+    "If it is even, halve it; if it is odd, add 1."
    ],
    "depth": 2
   },
@@ -318,6 +449,10 @@
    "intermediates": [
     "4"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 6.",
+    "If it is even, halve it; if it is odd, add 2."
+   ],
    "depth": 2
   },
   {
@@ -327,6 +462,10 @@
    "start": "8",
    "intermediates": [
     "4"
+   ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
    ],
    "depth": 2
   },
@@ -338,6 +477,10 @@
    "intermediates": [
     "2"
    ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "Halve it, rounding up."
+   ],
    "depth": 2
   },
   {
@@ -348,6 +491,10 @@
    "intermediates": [
     "6"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 2; otherwise double it.",
+    "If it is bigger than 5, subtract 2; otherwise double it."
+   ],
    "depth": 2
   },
   {
@@ -357,6 +504,10 @@
    "start": "5",
    "intermediates": [
     "1"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 5.",
+    "If it is bigger than 5, subtract 3; otherwise double it."
    ],
    "depth": 2
   },
@@ -369,6 +520,11 @@
     "4",
     "2"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 3.",
+    "Halve it, rounding up.",
+    "If it is even, halve it; if it is odd, add 7."
+   ],
    "depth": 3
   },
   {
@@ -379,6 +535,11 @@
    "intermediates": [
     "5",
     "1"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 7.",
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "If it is bigger than 5, subtract 3; otherwise double it."
    ],
    "depth": 3
   },
@@ -391,6 +552,11 @@
     "4",
     "2"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 8.",
+    "Halve it, rounding up."
+   ],
    "depth": 3
   },
   {
@@ -401,6 +567,11 @@
    "intermediates": [
     "4",
     "8"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is bigger than 5, subtract 2; otherwise double it.",
+    "If it is bigger than 5, subtract 3; otherwise double it."
    ],
    "depth": 3
   },
@@ -413,6 +584,11 @@
     "5",
     "4"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 8.",
+    "If it is even, halve it; if it is odd, add 6."
+   ],
    "depth": 3
   },
   {
@@ -423,6 +599,11 @@
    "intermediates": [
     "1",
     "6"
+   ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "If it is even, halve it; if it is odd, add 5.",
+    "If it is even, halve it; if it is odd, add 8."
    ],
    "depth": 3
   },
@@ -435,6 +616,11 @@
     "7",
     "3"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 2.",
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "Halve it, rounding up."
+   ],
    "depth": 3
   },
   {
@@ -445,6 +631,11 @@
    "intermediates": [
     "5",
     "1"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 2."
    ],
    "depth": 3
   },
@@ -457,6 +648,11 @@
     "6",
     "2"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 3; otherwise double it.",
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "Halve it, rounding up."
+   ],
    "depth": 3
   },
   {
@@ -467,6 +663,11 @@
    "intermediates": [
     "3",
     "2"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 8.",
+    "Halve it, rounding up."
    ],
    "depth": 3
   },
@@ -479,6 +680,11 @@
     "6",
     "3"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 2.",
+    "Halve it, rounding up."
+   ],
    "depth": 3
   },
   {
@@ -489,6 +695,11 @@
    "intermediates": [
     "8",
     "7"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 5.",
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 7."
    ],
    "depth": 3
   },
@@ -501,6 +712,11 @@
     "8",
     "4"
    ],
+   "lookups": [
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 5.",
+    "Halve it, rounding up."
+   ],
    "depth": 3
   },
   {
@@ -511,6 +727,11 @@
    "intermediates": [
     "1",
     "2"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 7.",
+    "If it is bigger than 5, subtract 4; otherwise double it.",
+    "If it is bigger than 5, subtract 1; otherwise double it."
    ],
    "depth": 3
   },
@@ -523,6 +744,11 @@
     "3",
     "6"
    ],
+   "lookups": [
+    "Halve it, rounding up.",
+    "If it is bigger than 5, subtract 1; otherwise double it.",
+    "If it is bigger than 5, subtract 4; otherwise double it."
+   ],
    "depth": 3
   },
   {
@@ -533,6 +759,11 @@
    "intermediates": [
     "2",
     "1"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 3.",
+    "If it is even, halve it; if it is odd, add 1.",
+    "If it is even, halve it; if it is odd, add 2."
    ],
    "depth": 3
   },
@@ -545,6 +776,11 @@
     "7",
     "4"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 7.",
+    "Halve it, rounding up.",
+    "If it is even, halve it; if it is odd, add 6."
+   ],
    "depth": 3
   },
   {
@@ -555,6 +791,11 @@
    "intermediates": [
     "9",
     "6"
+   ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 2.",
+    "If it is even, halve it; if it is odd, add 6.",
+    "If it is bigger than 5, subtract 1; otherwise double it."
    ],
    "depth": 3
   },
@@ -567,6 +808,11 @@
     "1",
     "4"
    ],
+   "lookups": [
+    "If it is even, halve it; if it is odd, add 3.",
+    "If it is even, halve it; if it is odd, add 3.",
+    "If it is bigger than 5, subtract 2; otherwise double it."
+   ],
    "depth": 3
   },
   {
@@ -577,6 +823,11 @@
    "intermediates": [
     "5",
     "3"
+   ],
+   "lookups": [
+    "If it is bigger than 5, subtract 2; otherwise double it.",
+    "If it is even, halve it; if it is odd, add 7.",
+    "If it is bigger than 5, subtract 2; otherwise double it."
    ],
    "depth": 3
   }

@@ -1,4 +1,16 @@
 {
+ "alphabet": [
+  "red",
+  "blue",
+  "green",
+  "gold",
+  "black",
+  "white",
+  "pink",
+  "gray",
+  "purple",
+  "brown"
+ ],
  "items": [
   {
    "name": "brew-d1-00",
@@ -6,6 +18,9 @@
    "target": " pink",
    "start": "gold",
    "intermediates": [],
+   "lookups": [
+    "A gold potion turns pink with bark, red with chalk, and gray with salt."
+   ],
    "depth": 1
   },
   {
@@ -14,6 +29,9 @@
    "target": " pink",
    "start": "white",
    "intermediates": [],
+   "lookups": [
+    "A white potion turns pink with ash, gold with moss, and gray with salt."
+   ],
    "depth": 1
   },
   {
@@ -22,6 +40,9 @@
    "target": " gray",
    "start": "white",
    "intermediates": [],
+   "lookups": [
+    "A white potion turns red with bark, gold with chalk, and gray with clay."
+   ],
    "depth": 1
   },
   {
@@ -30,6 +51,9 @@
    "target": " brown",
    "start": "white",
    "intermediates": [],
+   "lookups": [
+    "A white potion turns red with chalk, green with clay, and brown with moss."
+   ],
    "depth": 1
   },
   {
@@ -38,6 +62,9 @@
    "target": " red",
    "start": "brown",
    "intermediates": [],
+   "lookups": [
+    "A brown potion turns purple with ash, red with clay, and white with moss."
+   ],
    "depth": 1
   },
   {
@@ -46,6 +73,9 @@
    "target": " pink",
    "start": "brown",
    "intermediates": [],
+   "lookups": [
+    "A brown potion turns white with ash, black with bark, and pink with moss."
+   ],
    "depth": 1
   },
   {
@@ -54,6 +84,9 @@
    "target": " purple",
    "start": "black",
    "intermediates": [],
+   "lookups": [
+    "A black potion turns purple with bark, white with chalk, and brown with salt."
+   ],
    "depth": 1
   },
   {
@@ -62,6 +95,9 @@
    "target": " purple",
    "start": "brown",
    "intermediates": [],
+   "lookups": [
+    "A brown potion turns red with ash, pink with clay, and purple with salt."
+   ],
    "depth": 1
   },
   {
@@ -70,6 +106,9 @@
    "target": " brown",
    "start": "green",
    "intermediates": [],
+   "lookups": [
+    "A green potion turns gray with ash, blue with bark, and brown with clay."
+   ],
    "depth": 1
   },
   {
@@ -78,6 +117,9 @@
    "target": " purple",
    "start": "blue",
    "intermediates": [],
+   "lookups": [
+    "A blue potion turns black with ash, brown with chalk, and purple with salt."
+   ],
    "depth": 1
   },
   {
@@ -86,6 +128,9 @@
    "target": " gold",
    "start": "brown",
    "intermediates": [],
+   "lookups": [
+    "A brown potion turns gold with clay, white with moss, and gray with salt."
+   ],
    "depth": 1
   },
   {
@@ -94,6 +139,9 @@
    "target": " red",
    "start": "pink",
    "intermediates": [],
+   "lookups": [
+    "A pink potion turns gray with chalk, red with moss, and gray with salt."
+   ],
    "depth": 1
   },
   {
@@ -102,6 +150,9 @@
    "target": " black",
    "start": "gray",
    "intermediates": [],
+   "lookups": [
+    "A gray potion turns black with ash, brown with bark, and brown with moss."
+   ],
    "depth": 1
   },
   {
@@ -110,6 +161,9 @@
    "target": " green",
    "start": "pink",
    "intermediates": [],
+   "lookups": [
+    "A pink potion turns green with chalk, purple with clay, and purple with salt."
+   ],
    "depth": 1
   },
   {
@@ -118,6 +172,9 @@
    "target": " red",
    "start": "pink",
    "intermediates": [],
+   "lookups": [
+    "A pink potion turns brown with ash, red with moss, and white with salt."
+   ],
    "depth": 1
   },
   {
@@ -126,6 +183,9 @@
    "target": " gray",
    "start": "blue",
    "intermediates": [],
+   "lookups": [
+    "A blue potion turns green with ash, gray with bark, and gray with clay."
+   ],
    "depth": 1
   },
   {
@@ -134,6 +194,9 @@
    "target": " pink",
    "start": "black",
    "intermediates": [],
+   "lookups": [
+    "A black potion turns blue with ash, pink with bark, and white with chalk."
+   ],
    "depth": 1
   },
   {
@@ -142,6 +205,9 @@
    "target": " blue",
    "start": "white",
    "intermediates": [],
+   "lookups": [
+    "A white potion turns blue with bark, blue with chalk, and blue with moss."
+   ],
    "depth": 1
   },
   {
@@ -150,6 +216,9 @@
    "target": " black",
    "start": "pink",
    "intermediates": [],
+   "lookups": [
+    "A pink potion turns black with chalk, blue with clay, and gold with moss."
+   ],
    "depth": 1
   },
   {
@@ -158,6 +227,9 @@
    "target": " pink",
    "start": "white",
    "intermediates": [],
+   "lookups": [
+    "A white potion turns gray with bark, black with moss, and pink with salt."
+   ],
    "depth": 1
   },
   {
@@ -167,6 +239,10 @@
    "start": "brown",
    "intermediates": [
     "red"
+   ],
+   "lookups": [
+    "A brown potion turns white with ash, white with bark, and red with salt.",
+    "A red potion turns gold with ash, gold with bark, and green with salt."
    ],
    "depth": 2
   },
@@ -178,6 +254,10 @@
    "intermediates": [
     "green"
    ],
+   "lookups": [
+    "A brown potion turns purple with ash, green with bark, and red with chalk.",
+    "A green potion turns black with ash, brown with bark, and black with chalk."
+   ],
    "depth": 2
   },
   {
@@ -187,6 +267,10 @@
    "start": "green",
    "intermediates": [
     "brown"
+   ],
+   "lookups": [
+    "A green potion turns pink with bark, brown with chalk, and black with salt.",
+    "A brown potion turns green with bark, green with chalk, and black with salt."
    ],
    "depth": 2
   },
@@ -198,6 +282,10 @@
    "intermediates": [
     "red"
    ],
+   "lookups": [
+    "A brown potion turns pink with ash, red with chalk, and white with salt.",
+    "A red potion turns gold with ash, pink with chalk, and gray with salt."
+   ],
    "depth": 2
   },
   {
@@ -207,6 +295,10 @@
    "start": "purple",
    "intermediates": [
     "green"
+   ],
+   "lookups": [
+    "A purple potion turns white with bark, green with chalk, and brown with moss.",
+    "A green potion turns purple with bark, black with chalk, and pink with moss."
    ],
    "depth": 2
   },
@@ -218,6 +310,10 @@
    "intermediates": [
     "gold"
    ],
+   "lookups": [
+    "A white potion turns purple with ash, gold with clay, and red with salt.",
+    "A gold potion turns green with ash, black with clay, and purple with salt."
+   ],
    "depth": 2
   },
   {
@@ -227,6 +323,10 @@
    "start": "purple",
    "intermediates": [
     "gold"
+   ],
+   "lookups": [
+    "A purple potion turns blue with bark, pink with moss, and gold with salt.",
+    "A gold potion turns purple with bark, red with moss, and pink with salt."
    ],
    "depth": 2
   },
@@ -238,6 +338,10 @@
    "intermediates": [
     "gray"
    ],
+   "lookups": [
+    "A blue potion turns white with ash, gray with bark, and brown with chalk.",
+    "A gray potion turns white with ash, gold with bark, and pink with chalk."
+   ],
    "depth": 2
   },
   {
@@ -247,6 +351,10 @@
    "start": "green",
    "intermediates": [
     "black"
+   ],
+   "lookups": [
+    "A green potion turns gray with ash, black with bark, and black with clay.",
+    "A black potion turns blue with ash, brown with bark, and red with clay."
    ],
    "depth": 2
   },
@@ -258,6 +366,10 @@
    "intermediates": [
     "green"
    ],
+   "lookups": [
+    "A pink potion turns blue with ash, green with moss, and red with salt.",
+    "A green potion turns pink with ash, gray with moss, and gold with salt."
+   ],
    "depth": 2
   },
   {
@@ -267,6 +379,10 @@
    "start": "pink",
    "intermediates": [
     "gold"
+   ],
+   "lookups": [
+    "A pink potion turns green with ash, red with bark, and gold with salt.",
+    "A gold potion turns green with ash, red with bark, and purple with salt."
    ],
    "depth": 2
   },
@@ -278,6 +394,10 @@
    "intermediates": [
     "brown"
    ],
+   "lookups": [
+    "A gray potion turns red with ash, red with bark, and brown with chalk.",
+    "A brown potion turns gold with ash, black with bark, and white with chalk."
+   ],
    "depth": 2
   },
   {
@@ -287,6 +407,10 @@
    "start": "blue",
    "intermediates": [
     "gray"
+   ],
+   "lookups": [
+    "A blue potion turns pink with ash, gray with clay, and white with moss.",
+    "A gray potion turns purple with ash, brown with clay, and black with moss."
    ],
    "depth": 2
   },
@@ -298,6 +422,10 @@
    "intermediates": [
     "pink"
    ],
+   "lookups": [
+    "A white potion turns pink with chalk, purple with clay, and blue with moss.",
+    "A pink potion turns blue with chalk, black with clay, and green with moss."
+   ],
    "depth": 2
   },
   {
@@ -307,6 +435,10 @@
    "start": "black",
    "intermediates": [
     "gold"
+   ],
+   "lookups": [
+    "A black potion turns gray with bark, green with clay, and gold with moss.",
+    "A gold potion turns white with bark, blue with clay, and blue with moss."
    ],
    "depth": 2
   },
@@ -318,6 +450,10 @@
    "intermediates": [
     "red"
    ],
+   "lookups": [
+    "A green potion turns red with ash, white with chalk, and purple with salt.",
+    "A red potion turns gold with ash, blue with chalk, and gold with salt."
+   ],
    "depth": 2
   },
   {
@@ -327,6 +463,10 @@
    "start": "brown",
    "intermediates": [
     "pink"
+   ],
+   "lookups": [
+    "A brown potion turns green with ash, gold with bark, and pink with clay.",
+    "A pink potion turns gold with ash, purple with bark, and blue with clay."
    ],
    "depth": 2
   },
@@ -338,6 +478,10 @@
    "intermediates": [
     "blue"
    ],
+   "lookups": [
+    "A gold potion turns brown with ash, blue with chalk, and green with salt.",
+    "A blue potion turns red with ash, gray with chalk, and pink with salt."
+   ],
    "depth": 2
   },
   {
@@ -348,6 +492,10 @@
    "intermediates": [
     "green"
    ],
+   "lookups": [
+    "A gray potion turns green with bark, gold with clay, and red with salt.",
+    "A green potion turns purple with bark, red with clay, and white with salt."
+   ],
    "depth": 2
   },
   {
@@ -357,6 +505,10 @@
    "start": "black",
    "intermediates": [
     "green"
+   ],
+   "lookups": [
+    "A black potion turns white with bark, green with chalk, and gold with clay.",
+    "A green potion turns gold with bark, gray with chalk, and black with clay."
    ],
    "depth": 2
   },
@@ -369,6 +521,11 @@
     "blue",
     "gold"
    ],
+   "lookups": [
+    "A green potion turns purple with ash, blue with bark, and white with clay.",
+    "A blue potion turns gold with ash, pink with bark, and gold with clay.",
+    "A gold potion turns red with ash, gray with bark, and pink with clay."
+   ],
    "depth": 3
   },
   {
@@ -379,6 +536,11 @@
    "intermediates": [
     "red",
     "gold"
+   ],
+   "lookups": [
+    "A green potion turns red with ash, red with chalk, and red with clay.",
+    "A red potion turns gold with ash, gold with chalk, and white with clay.",
+    "A gold potion turns brown with ash, purple with chalk, and green with clay."
    ],
    "depth": 3
   },
@@ -391,6 +553,11 @@
     "black",
     "gray"
    ],
+   "lookups": [
+    "A blue potion turns white with bark, gray with chalk, and black with clay.",
+    "A black potion turns purple with bark, gray with chalk, and white with clay.",
+    "A gray potion turns purple with bark, blue with chalk, and green with clay."
+   ],
    "depth": 3
   },
   {
@@ -401,6 +568,11 @@
    "intermediates": [
     "red",
     "gold"
+   ],
+   "lookups": [
+    "A green potion turns red with ash, pink with bark, and brown with clay.",
+    "A red potion turns blue with ash, gold with bark, and gold with clay.",
+    "A gold potion turns purple with ash, purple with bark, and red with clay."
    ],
    "depth": 3
   },
@@ -413,6 +585,11 @@
     "purple",
     "white"
    ],
+   "lookups": [
+    "A gold potion turns black with ash, gray with clay, and purple with salt.",
+    "A purple potion turns brown with ash, brown with clay, and white with salt.",
+    "A white potion turns green with ash, green with clay, and green with salt."
+   ],
    "depth": 3
   },
   {
@@ -423,6 +600,11 @@
    "intermediates": [
     "pink",
     "green"
+   ],
+   "lookups": [
+    "A black potion turns pink with bark, gray with clay, and green with salt.",
+    "A pink potion turns brown with bark, red with clay, and green with salt.",
+    "A green potion turns purple with bark, red with clay, and purple with salt."
    ],
    "depth": 3
   },
@@ -435,6 +617,11 @@
     "black",
     "blue"
    ],
+   "lookups": [
+    "A green potion turns brown with clay, black with moss, and black with salt.",
+    "A black potion turns gold with clay, white with moss, and blue with salt.",
+    "A blue potion turns gray with clay, gold with moss, and gray with salt."
+   ],
    "depth": 3
   },
   {
@@ -445,6 +632,11 @@
    "intermediates": [
     "pink",
     "green"
+   ],
+   "lookups": [
+    "A blue potion turns pink with ash, gold with chalk, and black with salt.",
+    "A pink potion turns green with ash, blue with chalk, and brown with salt.",
+    "A green potion turns gold with ash, red with chalk, and pink with salt."
    ],
    "depth": 3
   },
@@ -457,6 +649,11 @@
     "black",
     "white"
    ],
+   "lookups": [
+    "A gray potion turns red with ash, pink with chalk, and black with clay.",
+    "A black potion turns brown with ash, gray with chalk, and white with clay.",
+    "A white potion turns blue with ash, purple with chalk, and blue with clay."
+   ],
    "depth": 3
   },
   {
@@ -467,6 +664,11 @@
    "intermediates": [
     "white",
     "gray"
+   ],
+   "lookups": [
+    "A brown potion turns pink with chalk, purple with clay, and white with moss.",
+    "A white potion turns gray with chalk, red with clay, and purple with moss.",
+    "A gray potion turns blue with chalk, white with clay, and purple with moss."
    ],
    "depth": 3
   },
@@ -479,6 +681,11 @@
     "purple",
     "green"
    ],
+   "lookups": [
+    "A white potion turns pink with bark, purple with chalk, and gold with salt.",
+    "A purple potion turns brown with bark, green with chalk, and red with salt.",
+    "A green potion turns pink with bark, gold with chalk, and gray with salt."
+   ],
    "depth": 3
   },
   {
@@ -489,6 +696,11 @@
    "intermediates": [
     "pink",
     "purple"
+   ],
+   "lookups": [
+    "A red potion turns pink with ash, gold with bark, and pink with clay.",
+    "A pink potion turns gray with ash, purple with bark, and gray with clay.",
+    "A purple potion turns gold with ash, blue with bark, and brown with clay."
    ],
    "depth": 3
   },
@@ -501,6 +713,11 @@
     "brown",
     "gold"
    ],
+   "lookups": [
+    "A gray potion turns brown with bark, blue with chalk, and purple with salt.",
+    "A brown potion turns gold with bark, gold with chalk, and purple with salt.",
+    "A gold potion turns green with bark, blue with chalk, and brown with salt."
+   ],
    "depth": 3
   },
   {
@@ -511,6 +728,11 @@
    "intermediates": [
     "gray",
     "brown"
+   ],
+   "lookups": [
+    "A black potion turns gray with bark, green with chalk, and gray with moss.",
+    "A gray potion turns brown with bark, black with chalk, and gold with moss.",
+    "A brown potion turns blue with bark, white with chalk, and blue with moss."
    ],
    "depth": 3
   },
@@ -523,6 +745,11 @@
     "brown",
     "red"
    ],
+   "lookups": [
+    "A purple potion turns brown with ash, brown with bark, and gray with moss.",
+    "A brown potion turns blue with ash, blue with bark, and red with moss.",
+    "A red potion turns gold with ash, green with bark, and green with moss."
+   ],
    "depth": 3
   },
   {
@@ -533,6 +760,11 @@
    "intermediates": [
     "green",
     "brown"
+   ],
+   "lookups": [
+    "A white potion turns pink with ash, green with bark, and green with clay.",
+    "A green potion turns gold with ash, blue with bark, and brown with clay.",
+    "A brown potion turns gray with ash, red with bark, and gray with clay."
    ],
    "depth": 3
   },
@@ -545,6 +777,11 @@
     "blue",
     "black"
    ],
+   "lookups": [
+    "A pink potion turns blue with ash, purple with moss, and red with salt.",
+    "A blue potion turns black with ash, gray with moss, and red with salt.",
+    "A black potion turns white with ash, blue with moss, and green with salt."
+   ],
    "depth": 3
   },
   {
@@ -555,6 +792,11 @@
    "intermediates": [
     "white",
     "gray"
+   ],
+   "lookups": [
+    "A gold potion turns pink with ash, white with bark, and purple with moss.",
+    "A white potion turns gray with ash, red with bark, and pink with moss.",
+    "A gray potion turns brown with ash, pink with bark, and green with moss."
    ],
    "depth": 3
   },
@@ -567,6 +809,11 @@
     "red",
     "brown"
    ],
+   "lookups": [
+    "A pink potion turns gold with ash, brown with bark, and red with clay.",
+    "A red potion turns gray with ash, brown with bark, and pink with clay.",
+    "A brown potion turns pink with ash, pink with bark, and green with clay."
+   ],
    "depth": 3
   },
   {
@@ -577,6 +824,11 @@
    "intermediates": [
     "purple",
     "white"
+   ],
+   "lookups": [
+    "A black potion turns gold with ash, purple with chalk, and gold with moss.",
+    "A purple potion turns black with ash, white with chalk, and gold with moss.",
+    "A white potion turns brown with ash, red with chalk, and red with moss."
    ],
    "depth": 3
   }
