@@ -48,6 +48,15 @@ only lens run in this repo so far (`data/readouts/qwen2.5-7b-instruct.json`).
 `gemma-4-12b-it`, `huihui-gemma-4-12b-it-abliterated`, `gemma-4-26b-a4b-it`, `gemma-4-31b-it`,
 `qwen3.6-27b`, `gpt-oss-20b`, `mistral-small-24b-instruct-2501`. Not run here yet.
 
+### `neuronpedia/jacobian-lens`
+
+Fitted with the reference `jlens` library on WikiText; loads with `JacobianLens.from_pretrained`
+as-is. Path pattern `<model>/jlens/Salesforce-wikitext/<Model>_jacobian_lens.pt`. Covers Gemma 2/3/4
+(incl. `gemma-4-31b`, base not `-it`), Llama 3.1 8B, Llama 3.3 70B Instruct, OLMo 3 7B/32B, Qwen 2.5
+7B, Qwen 3 (1.7B–32B), Qwen 3.5 (0.8B–27B), Qwen 3.6 27B (`_n1000`), gpt-oss-20b, DeepSeek V4 Flash.
+Browsable at https://neuronpedia.org/jlens. Llama 3.3 70B's official repo is gated;
+`unsloth/Llama-3.3-70B-Instruct` is an ungated copy.
+
 ## Related, not J-lenses
 
 Celeste (`ceselder` on HuggingFace) has Qwen 3.6 27B meta-models: an NLA
@@ -62,11 +71,15 @@ model reasoned silently. Scoring is exact-prefix, so "four" for "4" counts as wr
 
 | Model                    | Correct |
 | ------------------------ | ------- |
-| Gemma 4 31B              | 77/93   |
-| Qwen 3.6 27B             | 72/93   |
-| Gemma 4 26B-A4B          | 65/93   |
-| Mistral Small 24B (2501) | 53/93   |
-| Qwen 2.5 7B Instruct     | 42/93   |
+| Gemma 4 31B              | 75/93   |
+| Qwen 3.6 27B             | 70/93   |
+| Gemma 4 26B-A4B          | 67/93   |
+| Llama 3.3 70B Instruct   | 53/93   |
+| Mistral Small 24B (2501) | 52/93   |
+| Qwen 2.5 7B Instruct     | 44/93   |
+
+Numbers move ±2 between reruns at temperature 0 (provider nondeterminism). Qwen 3 32B is excluded:
+OpenRouter reasoned silently on 61/93 despite reasoning being disabled.
 
 - `gpt-oss-20b` cannot be tested this way: its reasoning cannot be disabled.
 - In the raw `Fact:` format used for the lens run, Qwen 2.5 7B's top next token is right on 35/93.
@@ -80,8 +93,13 @@ Graphs are in `graphs/qwen2.5-7b-instruct/`. On the spider item, "spider" jumps 
 peaks at 24, "legs" peaks at 24, and "8" takes over at layer 26. Layers 0–20 decode to punctuation
 and junk tokens.
 
+Qwen 3.6 27B with the Neuronpedia `_n1000` lens, on one RunPod H100 80GB (about 52 GB VRAM, ~2 min
+for all 93 items once `OMP_NUM_THREADS=8` is set; see `scripts/lens_readout.py`). Raw-prompt
+accuracy 60/93. `AutoModelForCausalLM` loads the text-only `Qwen3_5ForCausalLM` cleanly. Graphs in
+`graphs/qwen3.6-27b/`. On the spider item, "spider" leads every tracked word from layer 34 to 41
+(peak ~22 at L41, while "8" is ~2), then "8" takes over in the last layers.
+
 ## Suggested next run
 
-Qwen 3.6 27B with the `camilablank` J-lens and R-lens side by side. It answers 72/93 without
-reasoning and the R-lens targets the early-layer noise seen above. Needs an 80 GB card (about 54 GB
-of weights in bf16) and the loading change noted above.
+Qwen 3.6 27B with the `camilablank` J-lens and R-lens, compared against the Neuronpedia run already
+done. The R-lens targets the early-layer noise seen above. Needs the loading change noted above.
