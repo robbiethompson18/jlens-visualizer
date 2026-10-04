@@ -9,11 +9,13 @@ come first (35), then the ones it gets wrong (58).
 | model | correct | % |
 | --- | --- | --- |
 | Qwen2.5-7B-Instruct, raw prompt, local forward pass (the graphs) | 35/93 | 38% |
-| qwen-2.5-7b-instruct, no-CoT via OpenRouter (chat + next-word instruction) | 42/93 | 45% |
-| qwen3.6-27b, no-CoT via OpenRouter (chat + next-word instruction) | 72/93 | 77% |
-| gemma-4-26b-a4b-it, no-CoT via OpenRouter (chat + next-word instruction) | 65/93 | 70% |
-| gemma-4-31b-it, no-CoT via OpenRouter (chat + next-word instruction) | 77/93 | 83% |
-| mistral-small-24b-instruct-2501, no-CoT via OpenRouter (chat + next-word instruction) | 53/93 | 57% |
+| qwen-2.5-7b-instruct, no-CoT via OpenRouter (chat + next-word instruction) | 44/93 | 47% |
+| qwen3.6-27b, no-CoT via OpenRouter (chat + next-word instruction) | 70/93 | 75% |
+| qwen3-32b, no-CoT via OpenRouter (chat + next-word instruction) | 39/93 | 42% |
+| gemma-4-26b-a4b-it, no-CoT via OpenRouter (chat + next-word instruction) | 67/93 | 72% |
+| gemma-4-31b-it, no-CoT via OpenRouter (chat + next-word instruction) | 75/93 | 81% |
+| mistral-small-24b-instruct-2501, no-CoT via OpenRouter (chat + next-word instruction) | 52/93 | 56% |
+| llama-3.3-70b-instruct, no-CoT via OpenRouter (chat + next-word instruction) | 53/93 | 57% |
 
 ## Answered correctly
 
@@ -31,9 +33,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Atlantic`
 - ✅ qwen3.6-27b: `Atlantic`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Atlantic`
 - ✅ gemma-4-31b-it: `Atlantic`
 - ✅ mistral-small-24b-instruct-2501: `Atlantic`
+- ✅ llama-3.3-70b-instruct: `Atlantic`
 
 </details>
 ---
@@ -50,9 +54,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Portuguese`
 - ✅ qwen3.6-27b: `Portuguese`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Portuguese`
 - ✅ gemma-4-31b-it: `Portuguese`
 - ✅ mistral-small-24b-instruct-2501: `Portuguese`
+- ✅ llama-3.3-70b-instruct: `Portuguese`
 
 </details>
 ---
@@ -69,9 +75,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `8`
 - ✅ qwen3.6-27b: `8`
+- ✅ qwen3-32b: `8`
 - ✅ gemma-4-26b-a4b-it: `8`
 - ✅ gemma-4-31b-it: `8`
 - ✅ mistral-small-24b-instruct-2501: `8`
+- ❌ llama-3.3-70b-instruct: `eight`
 
 </details>
 ---
@@ -88,9 +96,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `9`
 - ✅ qwen3.6-27b: `5`
-- ❌ gemma-4-26b-a4b-it: `six`
+- ❌ qwen3-32b: ``
+- ✅ gemma-4-26b-a4b-it: `5`
 - ✅ gemma-4-31b-it: `5`
-- ❌ mistral-small-24b-instruct-2501: `9`
+- ❌ mistral-small-24b-instruct-2501: `6`
+- ❌ llama-3.3-70b-instruct: `nine`
 
 </details>
 ---
@@ -107,9 +117,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `December`
 - ✅ qwen3.6-27b: `winter`
+- ✅ qwen3-32b: `winter.`
 - ✅ gemma-4-26b-a4b-it: `winter`
 - ✅ gemma-4-31b-it: `winter`
 - ✅ mistral-small-24b-instruct-2501: `Winter`
+- ✅ llama-3.3-70b-instruct: `winter`
 
 </details>
 ---
@@ -126,9 +138,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Au`
 - ✅ qwen3.6-27b: `Au`
+- ✅ qwen3-32b: `Au`
 - ✅ gemma-4-26b-a4b-it: `Au`
 - ✅ gemma-4-31b-it: `Au`
 - ✅ mistral-small-24b-instruct-2501: `Au`
+- ✅ llama-3.3-70b-instruct: `Au`
 
 </details>
 ---
@@ -145,9 +159,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Fe`
 - ✅ qwen3.6-27b: `Fe`
+- ✅ qwen3-32b: `Fe`
 - ✅ gemma-4-26b-a4b-it: `Fe`
 - ✅ gemma-4-31b-it: `Fe`
 - ✅ mistral-small-24b-instruct-2501: `Fe`
+- ✅ llama-3.3-70b-instruct: `Fe`
 
 </details>
 ---
@@ -164,9 +180,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Cu`
 - ✅ qwen3.6-27b: `Cu`
+- ✅ qwen3-32b: `Cu`
 - ✅ gemma-4-26b-a4b-it: `Cu`
 - ✅ gemma-4-31b-it: `Cu`
 - ✅ mistral-small-24b-instruct-2501: `Cu`
+- ❌ llama-3.3-70b-instruct: `Copper`
 
 </details>
 ---
@@ -183,9 +201,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `War`
 - ✅ qwen3.6-27b: `war`
+- ✅ qwen3-32b: `war.`
 - ✅ gemma-4-26b-a4b-it: `war`
 - ❌ gemma-4-31b-it: `beginnings`
-- ❌ mistral-small-24b-instruct-2501: `Mars`
+- ❌ mistral-small-24b-instruct-2501: `March`
+- ✅ llama-3.3-70b-instruct: `war`
 
 </details>
 ---
@@ -202,9 +222,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Earth`
 - ✅ qwen3.6-27b: `Earth`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `Moon`
-- ❌ gemma-4-31b-it: `June`
+- ❌ gemma-4-31b-it: `Saturn`
 - ❌ mistral-small-24b-instruct-2501: `Mars`
+- ❌ llama-3.3-70b-instruct: `June`
 
 </details>
 ---
@@ -221,9 +243,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Martius`
 - ✅ qwen3.6-27b: `3`
+- ✅ qwen3-32b: `3`
 - ✅ gemma-4-26b-a4b-it: `3`
 - ✅ gemma-4-31b-it: `3`
 - ❌ mistral-small-24b-instruct-2501: `7`
+- ✅ llama-3.3-70b-instruct: `3`
 
 </details>
 ---
@@ -238,11 +262,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ✅ qwen-2.5-7b-instruct: `6`
+- ❌ qwen-2.5-7b-instruct: `2`
 - ❌ qwen3.6-27b: `4`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `four`
 - ❌ gemma-4-31b-it: `4`
 - ❌ mistral-small-24b-instruct-2501: `4`
+- ✅ llama-3.3-70b-instruct: `6`
 
 </details>
 ---
@@ -259,9 +285,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `8`
 - ✅ qwen3.6-27b: `8`
+- ✅ qwen3-32b: `8`
 - ✅ gemma-4-26b-a4b-it: `8`
 - ✅ gemma-4-31b-it: `8`
 - ❌ mistral-small-24b-instruct-2501: `6`
+- ✅ llama-3.3-70b-instruct: `8`
 
 </details>
 ---
@@ -278,9 +306,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `6`
 - ✅ qwen3.6-27b: `6`
+- ✅ qwen3-32b: `6`
 - ✅ gemma-4-26b-a4b-it: `6`
 - ✅ gemma-4-31b-it: `6`
 - ✅ mistral-small-24b-instruct-2501: `6`
+- ✅ llama-3.3-70b-instruct: `6`
 
 </details>
 ---
@@ -297,9 +327,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `4`
 - ✅ qwen3.6-27b: `4`
+- ✅ qwen3-32b: `4`
 - ✅ gemma-4-26b-a4b-it: `4`
 - ✅ gemma-4-31b-it: `4`
-- ✅ mistral-small-24b-instruct-2501: `4`
+- ❌ mistral-small-24b-instruct-2501: `Four`
+- ❌ llama-3.3-70b-instruct: `Four`
 
 </details>
 ---
@@ -314,11 +346,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `two`
+- ✅ qwen-2.5-7b-instruct: `2`
 - ✅ qwen3.6-27b: `2`
+- ✅ qwen3-32b: `2`
 - ❌ gemma-4-26b-a4b-it: `two`
 - ✅ gemma-4-31b-it: `2`
 - ✅ mistral-small-24b-instruct-2501: `2`
+- ❌ llama-3.3-70b-instruct: `two`
 
 </details>
 ---
@@ -335,9 +369,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `5`
 - ✅ qwen3.6-27b: `5`
+- ✅ qwen3-32b: `5.`
 - ✅ gemma-4-26b-a4b-it: `5`
 - ✅ gemma-4-31b-it: `5`
 - ✅ mistral-small-24b-instruct-2501: `5`
+- ❌ llama-3.3-70b-instruct: `May`
 
 </details>
 ---
@@ -354,9 +390,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `4`
 - ✅ qwen3.6-27b: `4`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `four`
 - ✅ gemma-4-31b-it: `4`
 - ❌ mistral-small-24b-instruct-2501: `Four`
+- ❌ llama-3.3-70b-instruct: `four`
 
 </details>
 ---
@@ -373,9 +411,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Moscow`
 - ✅ qwen3.6-27b: `Moscow`
+- ✅ qwen3-32b: `Moscow.`
 - ✅ gemma-4-26b-a4b-it: `Moscow`
 - ✅ gemma-4-31b-it: `Moscow`
 - ✅ mistral-small-24b-instruct-2501: `Moscow`
+- ✅ llama-3.3-70b-instruct: `Moscow`
 
 </details>
 ---
@@ -392,9 +432,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Europe`
 - ✅ qwen3.6-27b: `Europe`
+- ✅ qwen3-32b: `Europe.`
 - ✅ gemma-4-26b-a4b-it: `Europe`
 - ✅ gemma-4-31b-it: `Europe`
 - ✅ mistral-small-24b-instruct-2501: `Europe`
+- ✅ llama-3.3-70b-instruct: `Europe`
 
 </details>
 ---
@@ -411,9 +453,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Euro`
 - ✅ qwen3.6-27b: `Euro`
+- ✅ qwen3-32b: `euro.`
 - ✅ gemma-4-26b-a4b-it: `euro`
 - ✅ gemma-4-31b-it: `Euro`
 - ✅ mistral-small-24b-instruct-2501: `Euro`
+- ✅ llama-3.3-70b-instruct: `Euro`
 
 </details>
 ---
@@ -430,9 +474,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `East China Sea`
 - ✅ qwen3.6-27b: `Pacific`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Pacific`
 - ✅ gemma-4-31b-it: `Pacific`
 - ✅ mistral-small-24b-instruct-2501: `Pacific`
+- ✅ llama-3.3-70b-instruct: `Pacific`
 
 </details>
 ---
@@ -449,9 +495,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `7`
 - ✅ qwen3.6-27b: `7`
+- ✅ qwen3-32b: `7`
 - ✅ gemma-4-26b-a4b-it: `7`
 - ✅ gemma-4-31b-it: `7`
 - ✅ mistral-small-24b-instruct-2501: `7`
+- ✅ llama-3.3-70b-instruct: `7`
 
 </details>
 ---
@@ -468,9 +516,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `14`
 - ✅ qwen3.6-27b: `2`
+- ✅ qwen3-32b: `2`
 - ✅ gemma-4-26b-a4b-it: `2`
 - ✅ gemma-4-31b-it: `2`
 - ✅ mistral-small-24b-instruct-2501: `2`
+- ✅ llama-3.3-70b-instruct: `2`
 
 </details>
 ---
@@ -487,9 +537,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Caesar`
 - ✅ qwen3.6-27b: `Caesar`
+- ✅ qwen3-32b: `Caesar`
 - ✅ gemma-4-26b-a4b-it: `Caesar`
 - ✅ gemma-4-31b-it: `Caesar`
 - ✅ mistral-small-24b-instruct-2501: `Caesar`
+- ✅ llama-3.3-70b-instruct: `Caesar`
 
 </details>
 ---
@@ -506,9 +558,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `5`
 - ✅ qwen3.6-27b: `7`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `7`
 - ✅ gemma-4-31b-it: `7`
 - ✅ mistral-small-24b-instruct-2501: `7`
+- ✅ llama-3.3-70b-instruct: `7`
 
 </details>
 ---
@@ -523,11 +577,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `2`
-- ❌ qwen3.6-27b: `carbon`
+- ❌ qwen-2.5-7b-instruct: `13`
+- ❌ qwen3.6-27b: `nitrogen`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `oxygen`
-- ❌ gemma-4-31b-it: `Promethium`
-- ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ gemma-4-31b-it: `Europium`
+- ❌ mistral-small-24b-instruct-2501: `13`
+- ❌ llama-3.3-70b-instruct: `13`
 
 </details>
 ---
@@ -544,9 +600,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `down`
 - ✅ qwen3.6-27b: `down`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `down`
 - ✅ gemma-4-31b-it: `down"`
 - ✅ mistral-small-24b-instruct-2501: `down`
+- ✅ llama-3.3-70b-instruct: `down`
 
 </details>
 ---
@@ -563,9 +621,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Asia`
 - ✅ qwen3.6-27b: `Asia`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Asia`
 - ✅ gemma-4-31b-it: `Asia`
 - ✅ mistral-small-24b-instruct-2501: `Asia`
+- ✅ llama-3.3-70b-instruct: `Asia`
 
 </details>
 ---
@@ -582,9 +642,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `French`
 - ✅ qwen3.6-27b: `French`
+- ✅ qwen3-32b: `French.`
 - ✅ gemma-4-26b-a4b-it: `French`
 - ✅ gemma-4-31b-it: `French`
 - ✅ mistral-small-24b-instruct-2501: `French`
+- ✅ llama-3.3-70b-instruct: `French`
 
 </details>
 ---
@@ -601,9 +663,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `O`
 - ✅ qwen3.6-27b: `O`
+- ✅ qwen3-32b: `O"`
 - ✅ gemma-4-26b-a4b-it: `O`
 - ✅ gemma-4-31b-it: `O`
 - ✅ mistral-small-24b-instruct-2501: `October`
+- ✅ llama-3.3-70b-instruct: `O`
 
 </details>
 ---
@@ -620,9 +684,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `F`
 - ✅ qwen3.6-27b: `F`
+- ✅ qwen3-32b: `F`
 - ✅ gemma-4-26b-a4b-it: `F`
 - ✅ gemma-4-31b-it: `F`
 - ✅ mistral-small-24b-instruct-2501: `February`
+- ✅ llama-3.3-70b-instruct: `F`
 
 </details>
 ---
@@ -639,9 +705,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `night`
 - ✅ qwen3.6-27b: `night`
+- ✅ qwen3-32b: `night.`
 - ✅ gemma-4-26b-a4b-it: `night`
 - ✅ gemma-4-31b-it: `night"`
 - ✅ mistral-small-24b-instruct-2501: `night`
+- ✅ llama-3.3-70b-instruct: `night`
 
 </details>
 ---
@@ -658,9 +726,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `V`
 - ✅ qwen3.6-27b: `V`
+- ✅ qwen3-32b: `V.`
 - ✅ gemma-4-26b-a4b-it: `V`
 - ✅ gemma-4-31b-it: `V`
 - ✅ mistral-small-24b-instruct-2501: `V`
+- ❌ llama-3.3-70b-instruct: `Five`
 
 </details>
 ---
@@ -677,9 +747,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `low`
 - ✅ qwen3.6-27b: `low`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `low`
 - ✅ gemma-4-31b-it: `low`
 - ✅ mistral-small-24b-instruct-2501: `low`
+- ✅ llama-3.3-70b-instruct: `low`
 
 </details>
 
@@ -699,9 +771,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Blue`
 - ✅ qwen3.6-27b: `red`
+- ✅ qwen3-32b: `red.`
 - ✅ gemma-4-26b-a4b-it: `red`
 - ✅ gemma-4-31b-it: `red`
 - ✅ mistral-small-24b-instruct-2501: `Red`
+- ✅ llama-3.3-70b-instruct: `red`
 
 </details>
 ---
@@ -718,9 +792,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Asia`
 - ✅ qwen3.6-27b: `Asia`
+- ✅ qwen3-32b: `Asia.`
 - ✅ gemma-4-26b-a4b-it: `Asia`
 - ✅ gemma-4-31b-it: `Asia`
 - ✅ mistral-small-24b-instruct-2501: `Asia`
+- ✅ llama-3.3-70b-instruct: `Asia`
 
 </details>
 ---
@@ -737,9 +813,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Buckeye`
 - ❌ qwen3.6-27b: `Buckeye`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `Michigan`
 - ✅ gemma-4-31b-it: `Wolverine`
 - ❌ mistral-small-24b-instruct-2501: `Buckeye`
+- ✅ llama-3.3-70b-instruct: `Wolverine`
 
 </details>
 ---
@@ -756,9 +834,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Kansas`
 - ❌ qwen3.6-27b: `Nebraska`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Colorado`
 - ✅ gemma-4-31b-it: `Colorado`
 - ✅ mistral-small-24b-instruct-2501: `Colorado`
+- ✅ llama-3.3-70b-instruct: `Colorado`
 
 </details>
 ---
@@ -775,9 +855,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `gas`
 - ❌ qwen3.6-27b: `solid`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `liquid`
 - ❌ gemma-4-31b-it: `solid`
 - ❌ mistral-small-24b-instruct-2501: `Solid`
+- ❌ llama-3.3-70b-instruct: `solid`
 
 </details>
 ---
@@ -794,9 +876,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Cu`
 - ✅ qwen3.6-27b: `green`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `gold`
 - ✅ gemma-4-31b-it: `green`
 - ✅ mistral-small-24b-instruct-2501: `Green`
+- ✅ llama-3.3-70b-instruct: `green`
 
 </details>
 ---
@@ -813,9 +897,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `4`
 - ❌ qwen3.6-27b: `0`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `zero`
 - ✅ gemma-4-31b-it: `1`
 - ❌ mistral-small-24b-instruct-2501: `2`
+- ❌ llama-3.3-70b-instruct: `one`
 
 </details>
 ---
@@ -832,9 +918,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Canada`
 - ✅ qwen3.6-27b: `Canada`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Canada`
 - ✅ gemma-4-31b-it: `Canada`
 - ✅ mistral-small-24b-instruct-2501: `Canada`
+- ✅ llama-3.3-70b-instruct: `Canada`
 
 </details>
 ---
@@ -851,9 +939,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `France`
 - ❌ qwen3.6-27b: `France`
+- ❌ qwen3-32b: `Spain.`
 - ❌ gemma-4-26b-a4b-it: `Spain`
 - ❌ gemma-4-31b-it: `Spain`
 - ❌ mistral-small-24b-instruct-2501: `France`
+- ❌ llama-3.3-70b-instruct: `Spain`
 
 </details>
 ---
@@ -870,9 +960,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `2`
 - ❌ qwen3.6-27b: `4`
+- ❌ qwen3-32b: `eight`
 - ❌ gemma-4-26b-a4b-it: `four`
 - ✅ gemma-4-31b-it: `8`
 - ❌ mistral-small-24b-instruct-2501: `Four`
+- ❌ llama-3.3-70b-instruct: `four`
 
 </details>
 ---
@@ -889,9 +981,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Maine`
 - ❌ qwen3.6-27b: `Texas`
-- ❌ gemma-4-26b-a4b-it: `Delaware`
+- ❌ qwen3-32b: ``
+- ✅ gemma-4-26b-a4b-it: `California`
 - ❌ gemma-4-31b-it: `Wyoming`
 - ✅ mistral-small-24b-instruct-2501: `California`
+- ❌ llama-3.3-70b-instruct: `Alaska`
 
 </details>
 ---
@@ -908,9 +1002,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `6`
 - ❌ qwen3.6-27b: `2`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `5`
 - ✅ gemma-4-31b-it: `5`
 - ✅ mistral-small-24b-instruct-2501: `5`
+- ✅ llama-3.3-70b-instruct: `5`
 
 </details>
 ---
@@ -925,11 +1021,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `17`
+- ❌ qwen-2.5-7b-instruct: `10`
 - ✅ qwen3.6-27b: `7`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `7`
 - ✅ gemma-4-31b-it: `7`
 - ✅ mistral-small-24b-instruct-2501: `7`
+- ✅ llama-3.3-70b-instruct: `7`
 
 </details>
 ---
@@ -946,9 +1044,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `12`
 - ✅ qwen3.6-27b: `20`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `20`
 - ✅ gemma-4-31b-it: `20`
 - ✅ mistral-small-24b-instruct-2501: `20`
+- ✅ llama-3.3-70b-instruct: `20`
 
 </details>
 ---
@@ -965,9 +1065,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Jupiter`
 - ❌ qwen3.6-27b: `Jupiter`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Earth`
 - ✅ gemma-4-31b-it: `Earth`
 - ❌ mistral-small-24b-instruct-2501: `8`
+- ❌ llama-3.3-70b-instruct: `Venus`
 
 </details>
 ---
@@ -983,10 +1085,12 @@ come first (35), then the ones it gets wrong (58).
 <details><summary>No-CoT answers via OpenRouter</summary>
 
 - ❌ qwen-2.5-7b-instruct: `Eighth`
-- ❌ qwen3.6-27b: `Earth`
-- ❌ gemma-4-26b-a4b-it: `Saturn`
+- ❌ qwen3.6-27b: `Mars`
+- ❌ qwen3-32b: ``
+- ✅ gemma-4-26b-a4b-it: `Jupiter`
 - ✅ gemma-4-31b-it: `Jupiter`
 - ❌ mistral-small-24b-instruct-2501: `8`
+- ❌ llama-3.3-70b-instruct: `Mars`
 
 </details>
 ---
@@ -1003,9 +1107,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Eighth`
 - ✅ qwen3.6-27b: `Saturn`
+- ✅ qwen3-32b: `Saturn.`
 - ❌ gemma-4-26b-a4b-it: `Uranus`
-- ✅ gemma-4-31b-it: `Saturn`
+- ❌ gemma-4-31b-it: `Uranus`
 - ❌ mistral-small-24b-instruct-2501: `8`
+- ❌ llama-3.3-70b-instruct: `Mars`
 
 </details>
 ---
@@ -1020,11 +1126,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `Eighth`
+- ❌ qwen-2.5-7b-instruct: `4`
 - ❌ qwen3.6-27b: `Earth`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Mars`
 - ✅ gemma-4-31b-it: `Mars`
 - ✅ mistral-small-24b-instruct-2501: `Mars`
+- ✅ llama-3.3-70b-instruct: `Mars`
 
 </details>
 ---
@@ -1041,9 +1149,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `5`
 - ✅ qwen3.6-27b: `Saturn`
+- ❌ qwen3-32b: `Uranus.`
 - ❌ gemma-4-26b-a4b-it: `Uranus`
-- ✅ gemma-4-31b-it: `Saturn`
+- ❌ gemma-4-31b-it: `Uranus`
 - ❌ mistral-small-24b-instruct-2501: `6`
+- ❌ llama-3.3-70b-instruct: `Earth`
 
 </details>
 ---
@@ -1058,11 +1168,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `Silver`
+- ✅ qwen-2.5-7b-instruct: `Iron`
 - ❌ qwen3.6-27b: `nickel`
-- ❌ gemma-4-26b-a4b-it: `chlorine`
-- ❌ gemma-4-31b-it: `Zinc`
+- ✅ qwen3-32b: `iron.`
+- ❌ gemma-4-26b-a4b-it: `phosphorus`
+- ❌ gemma-4-31b-it: `Gallium`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ llama-3.3-70b-instruct: `oxygen`
 
 </details>
 ---
@@ -1077,11 +1189,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `silver`
+- ❌ qwen-2.5-7b-instruct: `Iron`
 - ❌ qwen3.6-27b: `nitrogen`
-- ✅ gemma-4-26b-a4b-it: `silicon`
-- ❌ gemma-4-31b-it: `Sulfur`
+- ❌ qwen3-32b: ``
+- ❌ gemma-4-26b-a4b-it: `phosphorus`
+- ❌ gemma-4-31b-it: `Germanium`
 - ❌ mistral-small-24b-instruct-2501: `14`
+- ❌ llama-3.3-70b-instruct: `calcium`
 
 </details>
 ---
@@ -1098,9 +1212,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `12`
 - ✅ qwen3.6-27b: `carbon`
+- ✅ qwen3-32b: `Carbon.`
 - ✅ gemma-4-26b-a4b-it: `carbon`
 - ✅ gemma-4-31b-it: `carbon`
 - ❌ mistral-small-24b-instruct-2501: `Oxygen`
+- ✅ llama-3.3-70b-instruct: `carbon`
 
 </details>
 ---
@@ -1115,11 +1231,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `Iron`
+- ✅ qwen-2.5-7b-instruct: `Nitrogen`
 - ✅ qwen3.6-27b: `nitrogen`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `nitrogen`
 - ✅ gemma-4-31b-it: `Nitrogen`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ llama-3.3-70b-instruct: `Phosphorus`
 
 </details>
 ---
@@ -1136,9 +1254,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Silicon`
 - ✅ qwen3.6-27b: `oxygen`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `oxygen`
 - ✅ gemma-4-31b-it: `oxygen`
-- ❌ mistral-small-24b-instruct-2501: `Sulfur`
+- ❌ mistral-small-24b-instruct-2501: `Selenium`
+- ❌ llama-3.3-70b-instruct: `carbon`
 
 </details>
 ---
@@ -1155,9 +1275,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Silicon`
 - ✅ qwen3.6-27b: `carbon`
-- ❌ gemma-4-26b-a4b-it: `phosphorus`
-- ✅ gemma-4-31b-it: `carbon`
+- ❌ qwen3-32b: ``
+- ✅ gemma-4-26b-a4b-it: `carbon`
+- ✅ gemma-4-31b-it: `Carbon`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ✅ llama-3.3-70b-instruct: `carbon`
 
 </details>
 ---
@@ -1174,9 +1296,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Nitrogen`
 - ✅ qwen3.6-27b: `nitrogen`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `nitrogen`
 - ✅ gemma-4-31b-it: `Nitrogen`
-- ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ mistral-small-24b-instruct-2501: `7`
+- ❌ llama-3.3-70b-instruct: `Carbon`
 
 </details>
 ---
@@ -1193,9 +1317,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Beijing`
 - ✅ qwen3.6-27b: `Beijing`
+- ✅ qwen3-32b: `Beijing.`
 - ❌ gemma-4-26b-a4b-it: `New`
 - ❌ gemma-4-31b-it: `New`
 - ✅ mistral-small-24b-instruct-2501: `Beijing`
+- ✅ llama-3.3-70b-instruct: `Beijing`
 
 </details>
 ---
@@ -1212,9 +1338,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `Jakarta`
 - ✅ qwen3.6-27b: `Jakarta`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `Jakarta`
 - ❌ gemma-4-31b-it: `Canberra`
 - ❌ mistral-small-24b-instruct-2501: `Wellington`
+- ✅ llama-3.3-70b-instruct: `Jakarta`
 
 </details>
 ---
@@ -1231,9 +1359,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `25`
 - ✅ qwen3.6-27b: `12`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `12`
 - ✅ gemma-4-31b-it: `12`
 - ✅ mistral-small-24b-instruct-2501: `12`
+- ✅ llama-3.3-70b-instruct: `12`
 
 </details>
 ---
@@ -1250,9 +1380,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `10`
 - ✅ qwen3.6-27b: `10`
+- ✅ qwen3-32b: `10`
 - ✅ gemma-4-26b-a4b-it: `10`
 - ✅ gemma-4-31b-it: `10`
 - ✅ mistral-small-24b-instruct-2501: `10`
+- ✅ llama-3.3-70b-instruct: `10`
 
 </details>
 ---
@@ -1269,9 +1401,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `January`
 - ❌ qwen3.6-27b: `doors`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `war`
 - ✅ gemma-4-31b-it: `beginnings`
 - ❌ mistral-small-24b-instruct-2501: `January`
+- ❌ llama-3.3-70b-instruct: `January`
 
 </details>
 ---
@@ -1288,9 +1422,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `2`
 - ✅ qwen3.6-27b: `1`
-- ❌ gemma-4-26b-a4b-it: `2`
+- ✅ qwen3-32b: `1`
+- ❌ gemma-4-26b-a4b-it: `6`
 - ✅ gemma-4-31b-it: `1`
 - ❌ mistral-small-24b-instruct-2501: `2`
+- ❌ llama-3.3-70b-instruct: `January`
 
 </details>
 ---
@@ -1307,9 +1443,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Iron`
 - ✅ qwen3.6-27b: `sodium`
-- ❌ gemma-4-26b-a4b-it: `phosphorus`
-- ❌ gemma-4-31b-it: `phosphorus`
+- ❌ qwen3-32b: ``
+- ✅ gemma-4-26b-a4b-it: `sodium`
+- ❌ gemma-4-31b-it: `Sulfur`
 - ❌ mistral-small-24b-instruct-2501: `11`
+- ❌ llama-3.3-70b-instruct: `carbon`
 
 </details>
 ---
@@ -1324,11 +1462,13 @@ come first (35), then the ones it gets wrong (58).
 
 <details><summary>No-CoT answers via OpenRouter</summary>
 
-- ❌ qwen-2.5-7b-instruct: `Carbon`
-- ✅ qwen3.6-27b: `sulfur`
-- ❌ gemma-4-26b-a4b-it: `calcium`
-- ❌ gemma-4-31b-it: `Neodymium`
+- ❌ qwen-2.5-7b-instruct: `12`
+- ❌ qwen3.6-27b: `silicon`
+- ❌ qwen3-32b: ``
+- ❌ gemma-4-26b-a4b-it: `phosphorus`
+- ❌ gemma-4-31b-it: `Promethium`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ llama-3.3-70b-instruct: `carbon`
 
 </details>
 ---
@@ -1345,9 +1485,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Iron`
 - ❌ qwen3.6-27b: `carbon`
+- ❌ qwen3-32b: `iron.`
 - ✅ gemma-4-26b-a4b-it: `magnesium`
 - ✅ gemma-4-31b-it: `magnesium`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ llama-3.3-70b-instruct: `twelve`
 
 </details>
 ---
@@ -1364,9 +1506,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `Iron`
 - ❌ qwen3.6-27b: `xenon`
-- ❌ gemma-4-26b-a4b-it: `gold`
-- ❌ gemma-4-31b-it: `Praseodymium`
+- ❌ qwen3-32b: `iron.`
+- ❌ gemma-4-26b-a4b-it: `nickel`
+- ❌ gemma-4-31b-it: `Europium`
 - ❌ mistral-small-24b-instruct-2501: `20`
+- ❌ llama-3.3-70b-instruct: `titanium`
 
 </details>
 ---
@@ -1383,9 +1527,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `west`
 - ✅ qwen3.6-27b: `west`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `West`
 - ✅ gemma-4-31b-it: `west`
 - ✅ mistral-small-24b-instruct-2501: `West`
+- ✅ llama-3.3-70b-instruct: `West`
 
 </details>
 ---
@@ -1402,9 +1548,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `up`
 - ✅ qwen3.6-27b: `up`
+- ✅ qwen3-32b: `upward.`
 - ✅ gemma-4-26b-a4b-it: `up`
 - ✅ gemma-4-31b-it: `up"`
 - ✅ mistral-small-24b-instruct-2501: `up`
+- ✅ llama-3.3-70b-instruct: `up`
 
 </details>
 ---
@@ -1420,10 +1568,12 @@ come first (35), then the ones it gets wrong (58).
 <details><summary>No-CoT answers via OpenRouter</summary>
 
 - ✅ qwen-2.5-7b-instruct: `North`
-- ✅ qwen3.6-27b: `north`
+- ✅ qwen3.6-27b: `North`
+- ✅ qwen3-32b: `north.`
 - ✅ gemma-4-26b-a4b-it: `North`
 - ✅ gemma-4-31b-it: `North`
 - ✅ mistral-small-24b-instruct-2501: `North`
+- ✅ llama-3.3-70b-instruct: `north`
 
 </details>
 ---
@@ -1440,9 +1590,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `9`
 - ✅ qwen3.6-27b: `9`
-- ✅ gemma-4-26b-a4b-it: `9`
+- ❌ qwen3-32b: ``
+- ❌ gemma-4-26b-a4b-it: `nine`
 - ✅ gemma-4-31b-it: `9`
 - ❌ mistral-small-24b-instruct-2501: `Four`
+- ❌ llama-3.3-70b-instruct: `three`
 
 </details>
 ---
@@ -1459,9 +1611,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `five`
 - ❌ qwen3.6-27b: `8`
+- ❌ qwen3-32b: `six.`
 - ❌ gemma-4-26b-a4b-it: `six`
 - ✅ gemma-4-31b-it: `6`
 - ❌ mistral-small-24b-instruct-2501: `Five`
+- ❌ llama-3.3-70b-instruct: `Six`
 
 </details>
 ---
@@ -1478,9 +1632,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `six`
 - ❌ qwen3.6-27b: `three`
+- ❌ qwen3-32b: `three.`
 - ❌ gemma-4-26b-a4b-it: `six`
 - ✅ gemma-4-31b-it: `3`
 - ❌ mistral-small-24b-instruct-2501: `Four`
+- ❌ llama-3.3-70b-instruct: `six`
 
 </details>
 ---
@@ -1496,10 +1652,12 @@ come first (35), then the ones it gets wrong (58).
 <details><summary>No-CoT answers via OpenRouter</summary>
 
 - ❌ qwen-2.5-7b-instruct: `56`
-- ✅ qwen3.6-27b: `4`
+- ❌ qwen3.6-27b: `10`
+- ❌ qwen3-32b: `8`
 - ✅ gemma-4-26b-a4b-it: `4`
 - ✅ gemma-4-31b-it: `4`
 - ❌ mistral-small-24b-instruct-2501: `14`
+- ❌ llama-3.3-70b-instruct: `two`
 
 </details>
 ---
@@ -1516,9 +1674,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `C`
 - ✅ qwen3.6-27b: `C`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `I`
 - ❌ gemma-4-31b-it: `I`
 - ✅ mistral-small-24b-instruct-2501: `C`
+- ✅ llama-3.3-70b-instruct: `C`
 
 </details>
 ---
@@ -1535,9 +1695,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `F`
 - ✅ qwen3.6-27b: `F`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `F`
 - ✅ gemma-4-31b-it: `F`
 - ✅ mistral-small-24b-instruct-2501: `France`
+- ✅ llama-3.3-70b-instruct: `France`
 
 </details>
 ---
@@ -1554,9 +1716,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `C`
 - ✅ qwen3.6-27b: `C`
+- ✅ qwen3-32b: `C`
 - ✅ gemma-4-26b-a4b-it: `C`
 - ✅ gemma-4-31b-it: `C`
 - ✅ mistral-small-24b-instruct-2501: `C`
+- ✅ llama-3.3-70b-instruct: `China`
 
 </details>
 ---
@@ -1573,9 +1737,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `November`
 - ✅ qwen3.6-27b: `November`
+- ✅ qwen3-32b: `November.`
 - ✅ gemma-4-26b-a4b-it: `November`
 - ✅ gemma-4-31b-it: `November`
 - ✅ mistral-small-24b-instruct-2501: `November`
+- ✅ llama-3.3-70b-instruct: `November`
 
 </details>
 ---
@@ -1592,9 +1758,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `February`
 - ✅ qwen3.6-27b: `January`
+- ✅ qwen3-32b: `January.`
 - ✅ gemma-4-26b-a4b-it: `January`
-- ✅ gemma-4-31b-it: `January`
+- ✅ gemma-4-31b-it: `January"`
 - ✅ mistral-small-24b-instruct-2501: `January`
+- ✅ llama-3.3-70b-instruct: `January`
 
 </details>
 ---
@@ -1611,9 +1779,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `noon`
 - ✅ qwen3.6-27b: `day`
+- ✅ qwen3-32b: `daytime.`
 - ✅ gemma-4-26b-a4b-it: `daytime`
 - ✅ gemma-4-31b-it: `day"`
-- ✅ mistral-small-24b-instruct-2501: `day`
+- ✅ mistral-small-24b-instruct-2501: `Day`
+- ❌ llama-3.3-70b-instruct: `noon`
 
 </details>
 ---
@@ -1630,9 +1800,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `XIII`
 - ✅ qwen3.6-27b: `L`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `XLV`
 - ✅ gemma-4-31b-it: `L`
 - ✅ mistral-small-24b-instruct-2501: `LVIII`
+- ❌ llama-3.3-70b-instruct: `Fifty`
 
 </details>
 ---
@@ -1649,9 +1821,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `12`
 - ✅ qwen3.6-27b: `6`
+- ❌ qwen3-32b: `12.`
 - ✅ gemma-4-26b-a4b-it: `6`
 - ✅ gemma-4-31b-it: `6`
 - ❌ mistral-small-24b-instruct-2501: `12`
+- ❌ llama-3.3-70b-instruct: `six`
 
 </details>
 ---
@@ -1668,9 +1842,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ✅ qwen-2.5-7b-instruct: `12`
 - ✅ qwen3.6-27b: `12`
+- ✅ qwen3-32b: `12.`
 - ✅ gemma-4-26b-a4b-it: `12`
 - ✅ gemma-4-31b-it: `12`
 - ❌ mistral-small-24b-instruct-2501: `8`
+- ✅ llama-3.3-70b-instruct: `12`
 
 </details>
 ---
@@ -1687,9 +1863,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `1`
 - ✅ qwen3.6-27b: `8`
+- ❌ qwen3-32b: `1.`
 - ✅ gemma-4-26b-a4b-it: `8`
 - ✅ gemma-4-31b-it: `8`
 - ❌ mistral-small-24b-instruct-2501: `1`
+- ✅ llama-3.3-70b-instruct: `8`
 
 </details>
 ---
@@ -1706,9 +1884,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `8`
 - ✅ qwen3.6-27b: `15`
+- ❌ qwen3-32b: ``
 - ✅ gemma-4-26b-a4b-it: `15`
 - ✅ gemma-4-31b-it: `15`
 - ✅ mistral-small-24b-instruct-2501: `15`
+- ✅ llama-3.3-70b-instruct: `15`
 
 </details>
 ---
@@ -1725,9 +1905,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `6`
 - ❌ qwen3.6-27b: `6`
+- ❌ qwen3-32b: `6.`
 - ✅ gemma-4-26b-a4b-it: `3`
 - ✅ gemma-4-31b-it: `3`
 - ❌ mistral-small-24b-instruct-2501: `13`
+- ❌ llama-3.3-70b-instruct: `6`
 
 </details>
 ---
@@ -1744,9 +1926,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `7`
 - ✅ qwen3.6-27b: `14`
-- ✅ gemma-4-26b-a4b-it: `14`
+- ❌ qwen3-32b: `7.`
+- ❌ gemma-4-26b-a4b-it: `7`
 - ✅ gemma-4-31b-it: `14`
 - ✅ mistral-small-24b-instruct-2501: `14`
+- ❌ llama-3.3-70b-instruct: `7`
 
 </details>
 ---
@@ -1763,9 +1947,11 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `war`
 - ✅ qwen3.6-27b: `peace`
+- ❌ qwen3-32b: ``
 - ❌ gemma-4-26b-a4b-it: `war`
-- ❌ gemma-4-31b-it: `war`
-- ❌ mistral-small-24b-instruct-2501: `War`
+- ❌ gemma-4-31b-it: `war"`
+- ❌ mistral-small-24b-instruct-2501: `war`
+- ❌ llama-3.3-70b-instruct: `war`
 
 </details>
 ---
@@ -1782,8 +1968,10 @@ come first (35), then the ones it gets wrong (58).
 
 - ❌ qwen-2.5-7b-instruct: `life`
 - ✅ qwen3.6-27b: `birth`
+- ✅ qwen3-32b: `birth.`
 - ✅ gemma-4-26b-a4b-it: `birth`
 - ✅ gemma-4-31b-it: `birth"`
-- ✅ mistral-small-24b-instruct-2501: `birth`
+- ✅ mistral-small-24b-instruct-2501: `Birth`
+- ✅ llama-3.3-70b-instruct: `birth`
 
 </details>

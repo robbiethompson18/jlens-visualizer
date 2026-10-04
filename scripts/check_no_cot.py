@@ -16,14 +16,16 @@ from functools import partial
 from pathlib import Path
 
 # OpenRouter ids of models with a public pre-fitted Jacobian lens
-# (anicka/jlens-qwen2.5-7b-instruct and solarkyle/jspace-lenses on HuggingFace).
+# (anicka/jlens-qwen2.5-7b-instruct, solarkyle/jspace-lenses and neuronpedia/jacobian-lens on HuggingFace).
 # openai/gpt-oss-20b also has a lens but its reasoning cannot be disabled.
 MODELS = [
     "qwen/qwen-2.5-7b-instruct",
     "qwen/qwen3.6-27b",
+    "qwen/qwen3-32b",
     "google/gemma-4-26b-a4b-it",
     "google/gemma-4-31b-it",
     "mistralai/mistral-small-24b-instruct-2501",
+    "meta-llama/llama-3.3-70b-instruct",
 ]
 
 INSTRUCTION = "Complete the sentence with only the next word or number, nothing else.\n\n"
