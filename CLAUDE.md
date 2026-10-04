@@ -13,8 +13,8 @@ instructions. Do not replace it with a separate file.
 - Python: `uv` for deps/venv, `ruff` for lint + format (line length 140), `ty` for types. Run
   `uv run ruff check . && uv run ruff format . && uv run ty check` before shipping.
 - Markdown: Prettier, 100 cols, `proseWrap: always`. Prettier is Markdown-only here.
-- Tests: none until this repo is roughly > 50k LOC. Verify by running the code, not by adding a
-  test suite. If a test would genuinely save time, ask first.
+- Tests: none until this repo is roughly > 50k LOC. Verify by running the code, not by adding a test
+  suite. If a test would genuinely save time, ask first.
 - Secrets/machine-specific env go in `.envrc.local` (gitignored), never `.envrc`.
 - Commit and push to `main` very frequently, after every working step. Robbie often reviews from his phone via GitHub.
 
@@ -30,5 +30,7 @@ Durable lessons about this repo go in git:
 See `~/.claude/personal-repo-rules.md` (imported above) for the full convention.
 
 Current docs:
-<!-- As docs are added under docs/, list them here, one per line: -->
-<!-- - [Title — when to read](docs/foo.md) — short gloss -->
+
+- [Available pre-fitted J-lenses — read before picking a model/lens to run or fitting a new lens](docs/available-lenses.md)
+  — HuggingFace lens repos (incl. the one from Neel's MATS doc), no-reasoning accuracy per model,
+  what has been run, suggested next run.
