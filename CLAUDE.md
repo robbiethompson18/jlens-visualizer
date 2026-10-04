@@ -1,4 +1,4 @@
-# jlens-spider
+# jlens-visualizer
 
 Per-layer J-lens (Jacobian lens) logit graphs for multi-hop prompts like "how many legs does the
 creature that makes webs have".

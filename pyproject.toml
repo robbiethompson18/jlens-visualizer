@@ -1,5 +1,5 @@
 [project]
-name = "jlens-spider"
+name = "jlens-visualizer"
 version = "0.1.0"
 description = "Per-layer J-lens (Jacobian lens) logit graphs for multi-hop prompts like 'how many legs does the creature that makes webs have'"
 requires-python = ">=3.12"
@@ -10,7 +10,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/jlens_spider"]
+packages = ["src/jlens_visualizer"]
 
 [tool.ruff]
 line-length = 140
