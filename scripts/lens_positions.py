@@ -33,7 +33,21 @@ RANK_CAP = 10_000  # plots treat everything past 10^4 as "not there"; capping ke
 model_name, lens_repo, lens_file, *dataset_paths = sys.argv[1:]
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
 device = "cuda" if torch.cuda.is_available() else "cpu"
-hf_model = transformers.AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.bfloat16).to(device)
+
+
+def load_model() -> torch.nn.Module:
+    """Text-only class first; multimodal checkpoints it can't map fully (Gemma 4) load as image-text-to-text."""
+    try:
+        hf_model, info = transformers.AutoModelForCausalLM.from_pretrained(model_name, dtype=torch.bfloat16, output_loading_info=True)
+        if not info["missing_keys"]:
+            return hf_model
+        print(f"AutoModelForCausalLM left {len(info['missing_keys'])} weights unloaded; retrying as image-text-to-text", flush=True)
+    except ValueError as error:
+        print(f"AutoModelForCausalLM failed ({error}); retrying as image-text-to-text", flush=True)
+    return transformers.AutoModelForImageTextToText.from_pretrained(model_name, dtype=torch.bfloat16)
+
+
+hf_model = load_model().to(device)
 model = jlens.from_hf(hf_model, tokenizer)
 lens = jlens.JacobianLens.from_pretrained(lens_repo, filename=lens_file)
 layers = lens.source_layers
