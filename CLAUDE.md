@@ -16,6 +16,7 @@ instructions. Do not replace it with a separate file.
 - Tests: none until this repo is roughly > 50k LOC. Verify by running the code, not by adding a
   test suite. If a test would genuinely save time, ask first.
 - Secrets/machine-specific env go in `.envrc.local` (gitignored), never `.envrc`.
+- Commit and push to `main` very frequently, after every working step. Robbie often reviews from his phone via GitHub.
 
 ## Docs
 
