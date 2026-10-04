@@ -1,9 +1,11 @@
 # chain9: J-lens by layer and token, Qwen3.6-27B
 
-Lens: `neuronpedia/jacobian-lens/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt`. Each item's graph shows, on top, the J-lens rank of every tracked word at the
-token before the answer (log scale, rank 1 at the top; thin = raw, thick = EWMA with a 2-layer
-halflife). Below it, one heatmap per word: rank at every layer (y) and each of the last prompt tokens (x),
-darker = closer to the lens's top token. Correct items first.
+Lens: `neuronpedia/jacobian-lens/qwen3.6-27b/jlens/Salesforce-wikitext/Qwen3.6-27B_jacobian_lens_n1000.pt`. Rank here is rank among the 9 possible answers (1, 2, 3, 4, 5, 6, 7, 8, 9), 1 = the lens prefers it to all the others. Each item's graph shows, on top, the rank
+of every tracked word at the token before the answer by layer (thin = raw, thick = EWMA with a
+2-layer halflife). Below it, one heatmap per word: rank at every layer (y) and prompt token
+(x), darker = higher rank. Dashed boxes outline the prompt line each step reads, in the colour of the
+step it produces. A word lighting up on its own token in early layers is the token echoing itself, not
+computation. Correct items first.
 
 | depth | correct |
 | --- | --- |

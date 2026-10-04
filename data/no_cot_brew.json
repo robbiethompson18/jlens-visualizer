@@ -1,0 +1,2180 @@
+{
+ "qwen/qwen3.6-27b": {
+  "brew-d1-00": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  }
+ },
+ "google/gemma-4-31b-it": {
+  "brew-d1-00": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "white",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "gold",
+   "reasoned": false
+  }
+ },
+ "google/gemma-4-26b-a4b-it": {
+  "brew-d1-00": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "white",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "gold",
+   "reasoned": false
+  }
+ },
+ "qwen/qwen3.8-27b": {
+  "brew-d1-00": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  }
+ },
+ "qwen/qwen3.5-122b-a10b": {
+  "brew-d1-00": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  }
+ },
+ "deepseek/deepseek-v4-flash": {
+  "brew-d1-00": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": " Answer: brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": " Answer: black",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "Answer: red",
+   "reasoned": true
+  }
+ },
+ "deepseek/deepseek-v4-pro": {
+  "brew-d1-00": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "Answer: white",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "Answer: pink",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "Answer: blue",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "Answer: gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "Answer: green",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "Answer: red",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "Answer: purple",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "Answer: brown",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "Answer: gold",
+   "reasoned": false
+  }
+ },
+ "moonshotai/kimi-k3": {
+  "brew-d1-00": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d1-01": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d1-02": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d1-03": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d1-04": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d1-05": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d1-06": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d1-07": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d1-08": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d1-09": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d1-10": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  },
+  "brew-d1-11": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d1-12": {
+   "answer": "Answer: black",
+   "reasoned": true
+  },
+  "brew-d1-13": {
+   "answer": "Answer: green",
+   "reasoned": true
+  },
+  "brew-d1-14": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d1-15": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d1-16": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d1-17": {
+   "answer": "Answer: blue",
+   "reasoned": true
+  },
+  "brew-d1-18": {
+   "answer": "Answer: black",
+   "reasoned": true
+  },
+  "brew-d1-19": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d2-00": {
+   "answer": "Answer: white",
+   "reasoned": true
+  },
+  "brew-d2-01": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d2-02": {
+   "answer": "Answer: black",
+   "reasoned": true
+  },
+  "brew-d2-03": {
+   "answer": "Answer: white",
+   "reasoned": true
+  },
+  "brew-d2-04": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d2-05": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d2-06": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d2-07": {
+   "answer": "Answer: white",
+   "reasoned": true
+  },
+  "brew-d2-08": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d2-09": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d2-10": {
+   "answer": "Answer: green",
+   "reasoned": true
+  },
+  "brew-d2-11": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d2-12": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d2-13": {
+   "answer": "Answer: blue",
+   "reasoned": true
+  },
+  "brew-d2-14": {
+   "answer": "Answer: blue",
+   "reasoned": true
+  },
+  "brew-d2-15": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d2-16": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  },
+  "brew-d2-17": {
+   "answer": "Answer: green",
+   "reasoned": true
+  },
+  "brew-d2-18": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d2-19": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  },
+  "brew-d3-00": {
+   "answer": "Answer: white",
+   "reasoned": true
+  },
+  "brew-d3-01": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d3-02": {
+   "answer": "Answer: purple",
+   "reasoned": true
+  },
+  "brew-d3-03": {
+   "answer": "Answer: blue",
+   "reasoned": true
+  },
+  "brew-d3-04": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d3-05": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d3-06": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d3-07": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  },
+  "brew-d3-08": {
+   "answer": "Answer: black",
+   "reasoned": true
+  },
+  "brew-d3-09": {
+   "answer": "Answer: green",
+   "reasoned": true
+  },
+  "brew-d3-10": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  },
+  "brew-d3-11": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d3-12": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d3-13": {
+   "answer": "Answer: green",
+   "reasoned": true
+  },
+  "brew-d3-14": {
+   "answer": "Answer: gray",
+   "reasoned": true
+  },
+  "brew-d3-15": {
+   "answer": "Answer: brown",
+   "reasoned": true
+  },
+  "brew-d3-16": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d3-17": {
+   "answer": "Answer: pink",
+   "reasoned": true
+  },
+  "brew-d3-18": {
+   "answer": "Answer: red",
+   "reasoned": true
+  },
+  "brew-d3-19": {
+   "answer": "Answer: gold",
+   "reasoned": true
+  }
+ },
+ "nousresearch/hermes-3-llama-3.1-405b": {
+  "brew-d1-00": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-01": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-02": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-03": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-04": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-05": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-06": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-07": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-08": {
+   "answer": "brown",
+   "reasoned": false
+  },
+  "brew-d1-09": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d1-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d1-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-12": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d1-14": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d1-15": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d1-16": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d1-17": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d1-18": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d1-19": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-00": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-01": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-02": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-03": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-04": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-05": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-06": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-07": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-08": {
+   "answer": "black",
+   "reasoned": false
+  },
+  "brew-d2-09": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-10": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-11": {
+   "answer": "red",
+   "reasoned": false
+  },
+  "brew-d2-12": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d2-13": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-14": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d2-15": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d2-16": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d2-17": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-18": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d2-19": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d3-00": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-01": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-02": {
+   "answer": "purple",
+   "reasoned": false
+  },
+  "brew-d3-03": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-04": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-05": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-06": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-07": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-08": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-09": {
+   "answer": "Answer: black",
+   "reasoned": false
+  },
+  "brew-d3-10": {
+   "answer": "gold",
+   "reasoned": false
+  },
+  "brew-d3-11": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-12": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-13": {
+   "answer": "green",
+   "reasoned": false
+  },
+  "brew-d3-14": {
+   "answer": "gray",
+   "reasoned": false
+  },
+  "brew-d3-15": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-16": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-17": {
+   "answer": "pink",
+   "reasoned": false
+  },
+  "brew-d3-18": {
+   "answer": "blue",
+   "reasoned": false
+  },
+  "brew-d3-19": {
+   "answer": "gold",
+   "reasoned": false
+  }
+ }
+}

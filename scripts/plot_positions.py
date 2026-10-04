@@ -1,13 +1,16 @@
-"""Graphs, layer x position heatmaps and a Markdown report from a lens_positions.py JSON.
+"""Graphs, layer x position heatmaps and a Markdown report from a lens_positions.py readout.
 
-Per item, one PNG: on top, each tracked word's J-lens rank at the token before the answer by layer (log
-scale, rank 1 at the top; thin line raw, thick line EWMA with a 2-layer halflife); below, one heatmap per
-word, layer x prompt token, darker = higher rank. Plus summary.png: per depth, the median rank of each role
-over the items the model gets right. README.md in the output directory shows it all, one item at a time.
+Per item, one PNG: on top, each tracked word's J-lens rank at the token before the answer by layer (rank 1
+at the top; thin line raw, thick line EWMA with a 2-layer halflife); below, one heatmap per word, layer x
+prompt token, darker = higher rank, with the prompt line each step reads outlined in that step's colour.
+Rank is among the dataset's answer alphabet when it has one (the 10 colours, the 9 digits), else among the
+whole vocabulary on a log scale. Plus summary.png: per depth, the median rank of each role over the items
+the model gets right. README.md in the output directory shows it all, one item at a time.
 
-    uv run python scripts/plot_positions.py data/positions/qwen3.6-27b/brew.json
+    uv run python scripts/plot_positions.py data/positions/qwen3.6-27b/brew.json.gz
 """
 
+import gzip
 import json
 import statistics
 import sys
@@ -24,11 +27,45 @@ MAX_LOG_RANK = 4  # ranks past 10^4 all render as "not there"
 EWMA_HALFLIFE = 2
 
 readout_path = Path(sys.argv[1])
-readout = json.loads(readout_path.read_text())
+raw = readout_path.read_bytes()
+readout = json.loads(gzip.decompress(raw) if readout_path.suffix == ".gz" else raw)
+task = readout_path.name.split(".")[0]
 layers = readout["layers"]
+alphabet = readout.get("alphabet")
 model_label = readout["model"].split("/")[-1]
-output_dir = Path("graphs") / model_label.lower() / readout_path.stem
+output_dir = Path("graphs") / model_label.lower() / task
 output_dir.mkdir(parents=True, exist_ok=True)
+rank_description = (
+    f"rank among the {len(alphabet)} possible answers ({', '.join(alphabet)}), 1 = the lens prefers it to all the others"
+    if alphabet
+    else "rank in the whole vocabulary (log scale), 1 = the lens's top token"
+)
+
+
+def ranks(series: dict) -> np.ndarray:
+    """1-based ranks, [layer, position]."""
+    return np.array(series["alphabet_rank" if alphabet else "rank"], dtype=float) + 1
+
+
+def step_role(step: int, n_steps: int) -> str:
+    """Role of the word that lookup number `step` (0-based) produces."""
+    return "answer" if step == n_steps - 1 else f"step {step + 1}"
+
+
+def lookup_spans(item: dict) -> list[tuple[int, int, str]]:
+    """(first token, last token, role produced) for each prompt line a step reads, found in order."""
+    text_starts = np.cumsum([0] + [len(token) for token in item["tokens"]])
+    text = "".join(item["tokens"])
+    spans, search_from = [], 0
+    for step, line in enumerate(item.get("lookups", [])):
+        start = text.find(line, search_from)
+        if start < 0:
+            continue
+        end = start + len(line)
+        search_from = end
+        tokens = [index for index in range(len(item["tokens"])) if text_starts[index] < end and text_starts[index + 1] > start]
+        spans.append((tokens[0], tokens[-1], step_role(step, len(item["lookups"]))))
+    return spans
 
 
 def is_correct(item: dict) -> bool:
@@ -54,25 +91,31 @@ def style(ax: plt.Axes) -> None:
 
 
 def setup_rank_axis(ax: plt.Axes) -> None:
-    ax.set_yscale("log")
-    ax.set_ylim(10**MAX_LOG_RANK * 3, 0.8)
-    ax.set_yticks([1, 10, 100, 1000, 10000], ["1", "10", "100", "1k", "10k"])
+    if alphabet:
+        ax.set_ylim(len(alphabet) + 0.3, 0.7)
+        ax.set_yticks(range(1, len(alphabet) + 1))
+        ax.set_ylabel(f"rank among the\n{len(alphabet)} possible answers", color=MUTED_INK, fontsize=9)
+    else:
+        ax.set_yscale("log")
+        ax.set_ylim(10**MAX_LOG_RANK * 3, 0.8)
+        ax.set_yticks([1, 10, 100, 1000, 10000], ["1", "10", "100", "1k", "10k"])
+        ax.set_ylabel("rank in J-lens readout\n(1 = top token)", color=MUTED_INK, fontsize=9)
     ax.grid(axis="y", color=GRID, linewidth=1)
-    ax.set_ylabel("rank in J-lens readout\n(1 = top token)", color=MUTED_INK, fontsize=9)
     style(ax)
 
 
 def plot_item(item: dict) -> None:
     words = list(item["words"].items())
-    fig = plt.figure(figsize=(12, 3.4 + 2.3 * len(words)), facecolor=SURFACE)
+    fig = plt.figure(figsize=(max(12, 0.09 * len(item["tokens"])), 3.4 + 2.3 * len(words)), facecolor=SURFACE)
     grid = fig.add_gridspec(1 + len(words), 1, height_ratios=[1.5] + [1] * len(words), hspace=0.55)
 
     ax = fig.add_subplot(grid[0])
     for word, series in words:
-        ranks = np.array([layer_ranks[-1] for layer_ranks in series["rank"]], dtype=float) + 1
+        final_ranks = ranks(series)[:, -1]
+        smoothed = ewma(final_ranks) if alphabet else 10 ** ewma(np.log10(final_ranks))
         color = ROLE_COLORS[series["role"]]
-        ax.plot(layers, ranks, color=color, linewidth=0.8, alpha=0.45)
-        ax.plot(layers, 10 ** ewma(np.log10(ranks)), color=color, linewidth=2.2, label=f"{word.strip()} ({series['role']})")
+        ax.plot(layers, final_ranks, color=color, linewidth=0.8, alpha=0.45)
+        ax.plot(layers, smoothed, color=color, linewidth=2.2, label=f"{word.strip()} ({series['role']})")
     setup_rank_axis(ax)
     if words:
         ax.legend(frameon=False, fontsize=9, labelcolor=INK, loc="upper left", bbox_to_anchor=(1.01, 1))
@@ -83,18 +126,24 @@ def plot_item(item: dict) -> None:
     )  # fmt: skip
 
     token_labels = [token.replace("\n", "⏎") for token in item["tokens"]]
+    spans = lookup_spans(item)
     for row, (word, series) in enumerate(words, start=1):
         ax = fig.add_subplot(grid[row])
         colormap = LinearSegmentedColormap.from_list(series["role"], [ROLE_COLORS[series["role"]], "#ffffff"])
-        log_ranks = np.log10(np.array(series["rank"], dtype=float) + 1)  # [layer, position]
-        image = ax.imshow(log_ranks, aspect="auto", origin="lower", cmap=colormap, vmin=0, vmax=MAX_LOG_RANK, interpolation="nearest")
+        values, vmin, vmax = (ranks(series), 1, len(alphabet)) if alphabet else (np.log10(ranks(series)), 0, MAX_LOG_RANK)
+        image = ax.imshow(values, aspect="auto", origin="lower", cmap=colormap, vmin=vmin, vmax=vmax, interpolation="nearest")
+        for first, last, role in spans:
+            ax.axvspan(first - 0.5, last + 0.5, fill=False, edgecolor=ROLE_COLORS[role], linewidth=1.6, linestyle="--")
         ax.set_yticks(range(0, len(layers), 10), [layers[index] for index in range(0, len(layers), 10)])
-        ax.set_xticks(range(len(token_labels)), token_labels, rotation=90, fontsize=7)
+        ax.set_xticks(range(len(token_labels)), token_labels, rotation=90, fontsize=6 if len(token_labels) > 80 else 7)
         ax.set_ylabel("layer", color=MUTED_INK, fontsize=9)
         ax.set_title(f'"{word.strip()}" ({series["role"]}): rank by layer and token', color=INK, fontsize=10, loc="left")
         style(ax)
-        bar = fig.colorbar(image, ax=ax, pad=0.01, fraction=0.03, ticks=range(MAX_LOG_RANK + 1))
-        bar.ax.set_yticklabels(["1", "10", "100", "1k", "10k+"], fontsize=7, color=MUTED_INK)
+        if alphabet:
+            fig.colorbar(image, ax=ax, pad=0.01, fraction=0.03, ticks=range(1, len(alphabet) + 1)).ax.tick_params(labelsize=7)
+        else:
+            bar = fig.colorbar(image, ax=ax, pad=0.01, fraction=0.03, ticks=range(MAX_LOG_RANK + 1))
+            bar.ax.set_yticklabels(["1", "10", "100", "1k", "10k+"], fontsize=7, color=MUTED_INK)
     fig.savefig(output_dir / f"{item['name']}.png", dpi=90, bbox_inches="tight")
     plt.close(fig)
 
@@ -108,14 +157,14 @@ def plot_summary(correct_items: list[dict]) -> Path:
         roles = list(dict.fromkeys(series["role"] for item in items for series in item["words"].values()))
         for role in roles:
             role_series = [series for item in items for series in item["words"].values() if series["role"] == role]
-            per_item = [[layer_ranks[-1] + 1 for layer_ranks in series["rank"]] for series in role_series]
+            per_item = [ranks(series)[:, -1] for series in role_series]
             medians = [statistics.median(ranks[index] for ranks in per_item) for index in range(len(layers))]
             ax.plot(layers, medians, color=ROLE_COLORS[role], linewidth=2.2, label=f"{role} (n={len(per_item)})")
         setup_rank_axis(ax)
         ax.set_title(f"depth {depth}" if depth else "all correct items", color=INK, fontsize=11, loc="left")
         ax.set_xlabel("layer", color=MUTED_INK, fontsize=9)
         ax.legend(frameon=False, fontsize=8, labelcolor=INK, loc="lower left")
-    title = f"{readout_path.stem}, {model_label}: median J-lens rank at the token before the answer"
+    title = f"{task}, {model_label}: median J-lens rank at the token before the answer"
     fig.suptitle(title, color=INK, fontsize=12, x=0.01, ha="left")
     fig.tight_layout()
     path = output_dir / "summary.png"
@@ -159,12 +208,14 @@ accuracy_rows = "\n".join(
     f"/{sum(i.get('depth', 0) == depth for i in readout['items'])} |"
     for depth in depths
 )
-report = f"""# {readout_path.stem}: J-lens by layer and token, {model_label}
+report = f"""# {task}: J-lens by layer and token, {model_label}
 
-Lens: `{readout["lens"]}`. Each item's graph shows, on top, the J-lens rank of every tracked word at the
-token before the answer (log scale, rank 1 at the top; thin = raw, thick = EWMA with a {EWMA_HALFLIFE}-layer
-halflife). Below it, one heatmap per word: rank at every layer (y) and each of the last prompt tokens (x),
-darker = closer to the lens's top token. Correct items first.
+Lens: `{readout["lens"]}`. Rank here is {rank_description}. Each item's graph shows, on top, the rank
+of every tracked word at the token before the answer by layer (thin = raw, thick = EWMA with a
+{EWMA_HALFLIFE}-layer halflife). Below it, one heatmap per word: rank at every layer (y) and prompt token
+(x), darker = higher rank. Dashed boxes outline the prompt line each step reads, in the colour of the
+step it produces. A word lighting up on its own token in early layers is the token echoing itself, not
+computation. Correct items first.
 
 | depth | correct |
 | --- | --- |

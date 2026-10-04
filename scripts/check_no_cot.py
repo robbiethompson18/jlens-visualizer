@@ -1,14 +1,17 @@
-"""Which multi-hop questions can each lens-equipped model answer in one forward pass?
+"""Which items can each model answer in one forward pass?
 
-Asks every item in data/lens-eval-multihop.json via OpenRouter with reasoning disabled. An item
-only makes a meaningful J-lens graph on a model that gets it right without chain of thought.
-Writes per-item results to data/no_cot_results.json.
+Asks every item of a dataset (default data/lens-eval-multihop.json) via OpenRouter with reasoning
+disabled. An item only makes a meaningful J-lens graph on a model that gets it right without chain of
+thought. Models default to MODELS. Writes per-item results to data/no_cot_results.json for the default
+dataset, else data/no_cot_<dataset>.json, and prints accuracy per depth when items have one.
 
     uv run python scripts/check_no_cot.py
+    uv run python scripts/check_no_cot.py data/brew.json google/gemma-4-31b-it moonshotai/kimi-k3
 """
 
 import json
 import os
+import sys
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -61,12 +64,15 @@ def ask(model: str, prompt: str) -> dict:
 
 
 def is_correct(answer: str, target: str) -> bool:
-    return answer.strip(" \"'.").lower().startswith(target.lower())
+    """NCRI-style items ask for an 'Answer: X' envelope; multi-hop items are bare completions."""
+    return answer.split("Answer:")[-1].strip(" \"'.*").lower().startswith(target.strip().lower())
 
 
-items = json.loads(Path("data/lens-eval-multihop.json").read_text())["items"]
+dataset_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data/lens-eval-multihop.json")
+models = sys.argv[2:] or MODELS
+items = json.loads(dataset_path.read_text())["items"]
 results: dict[str, dict[str, dict]] = {}
-for model in MODELS:
+for model in models:
     with ThreadPoolExecutor(max_workers=8) as pool:
         responses = list(pool.map(partial(ask, model), [item["prompt"] for item in items]))
     results[model] = {item["name"]: response for item, response in zip(items, responses)}
@@ -78,7 +84,15 @@ for model in MODELS:
         if "error" not in response and not is_correct(response["answer"], item["target"])
     ]
     print(f"{model}: {len(items) - errors - len(wrong)}/{len(items)} correct, {errors} errors, {reasoned} reasoned")
-    for name, target, answer in wrong:
-        print(f"    {name:32} want={target!r} got={answer[:40]!r}")
+    if "depth" in items[0]:
+        wrong_names = {name for name, _, _ in wrong}
+        for depth in sorted({item["depth"] for item in items}):
+            at_depth = [item for item in items if item["depth"] == depth]
+            correct = sum(item["name"] not in wrong_names and "error" not in results[model][item["name"]] for item in at_depth)
+            print(f"    depth {depth}: {correct}/{len(at_depth)}")
+    else:
+        for name, target, answer in wrong:
+            print(f"    {name:32} want={target!r} got={answer[:40]!r}")
 
-Path("data/no_cot_results.json").write_text(json.dumps(results, indent=1))
+output_name = "no_cot_results.json" if dataset_path.name == "lens-eval-multihop.json" else f"no_cot_{dataset_path.stem}.json"
+Path("data", output_name).write_text(json.dumps(results, indent=1))
