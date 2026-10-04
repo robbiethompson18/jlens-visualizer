@@ -1,0 +1,98 @@
+[
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 1,
+  "stir": 1,
+  "correct": "20/20",
+  "produced": 3.1,
+  "control": 4.9
+ },
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 2,
+  "stir": 1,
+  "correct": "16/20",
+  "produced": 2.033333333333333,
+  "control": 6.766666666666667
+ },
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 2,
+  "stir": 2,
+  "correct": "16/20",
+  "produced": 3.466666666666667,
+  "control": 5.466666666666667
+ },
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 3,
+  "stir": 1,
+  "correct": "1/20",
+  "produced": 3.066666666666667,
+  "control": 5.6
+ },
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 3,
+  "stir": 2,
+  "correct": "1/20",
+  "produced": 3.2333333333333334,
+  "control": 6.233333333333333
+ },
+ {
+  "model": "gemma-4-31b-it",
+  "stirs": 3,
+  "stir": 3,
+  "correct": "1/20",
+  "produced": 6.433333333333334,
+  "control": 6.2
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 1,
+  "stir": 1,
+  "correct": "20/20",
+  "produced": 3.125,
+  "control": 3.875
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 2,
+  "stir": 1,
+  "correct": "4/20",
+  "produced": 3.125,
+  "control": 5.3125
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 2,
+  "stir": 2,
+  "correct": "4/20",
+  "produced": 5.53125,
+  "control": 5.0625
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 3,
+  "stir": 1,
+  "correct": "0/20",
+  "produced": 4.78125,
+  "control": 4.875
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 3,
+  "stir": 2,
+  "correct": "0/20",
+  "produced": 5.5625,
+  "control": 5.1875
+ },
+ {
+  "model": "qwen3.6-27b",
+  "stirs": 3,
+  "stir": 3,
+  "correct": "0/20",
+  "produced": 4.5,
+  "control": 5.3125
+ }
+]

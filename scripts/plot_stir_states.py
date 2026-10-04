@@ -3,7 +3,8 @@
 For every brew item and every stir k, takes the J-lens rank among the 10 colours of the colour the potion
 has after stir k, at the token of stir k's ingredient (no colour word is written there, so a high rank is
 computed, not echoed), averaged over the last quarter of layers. Control: the item's other trajectory
-colours at the same token. Writes graphs/brew_stir_states.png.
+colours at the same token. Writes graphs/brew_stir_states.png, and the medians plus per-depth accuracy
+to graphs/brew_stir_states.json.
 
     uv run python scripts/plot_stir_states.py gemma-4-31b-it qwen3.6-27b
 """
@@ -67,6 +68,7 @@ def accuracy(model: str) -> dict[int, str]:
 
 
 models = sys.argv[1:]
+medians = []
 fig, axes = plt.subplots(1, len(models), figsize=(6 * len(models), 4.2), facecolor=SURFACE, sharey=True, squeeze=False)
 for ax, model in zip(axes[0], models):
     produced, control = stir_state_ranks(model)
@@ -77,6 +79,9 @@ for ax, model in zip(axes[0], models):
     ax.scatter(x, [control[key] for key in keys], color=CONTROL, s=40, label="other colours on the trajectory (control)", zorder=3)
     ax.scatter(x, [produced[key] for key in keys], color=PRODUCED, s=60, label="colour after this stir", zorder=4)
     correct = accuracy(model)
+    for depth, stir in keys:
+        row = {"model": model, "stirs": depth, "stir": stir, "correct": correct[depth]}
+        medians.append(row | {"produced": produced[(depth, stir)], "control": control[(depth, stir)]})
     ax.set_xticks(list(x), [f"stir {stir}\nof {depth}" for depth, stir in keys], fontsize=8)
     ax.set_ylim(10, 0.5)
     ax.set_yticks(range(1, 11))
@@ -94,4 +99,5 @@ axes[0][-1].legend(frameon=False, fontsize=8, labelcolor=INK, loc="lower right")
 fig.suptitle("brew: is the colour after each stir readable at that stir's token?", color=INK, fontsize=13, x=0.01, ha="left")
 fig.tight_layout()
 fig.savefig("graphs/brew_stir_states.png", dpi=110)
-print("wrote graphs/brew_stir_states.png")
+Path("graphs/brew_stir_states.json").write_text(json.dumps(medians, indent=1))
+print("wrote graphs/brew_stir_states.png and .json")
