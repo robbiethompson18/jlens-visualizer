@@ -99,7 +99,16 @@ accuracy 60/93. `AutoModelForCausalLM` loads the text-only `Qwen3_5ForCausalLM` 
 `graphs/qwen3.6-27b/`. On the spider item, "spider" leads every tracked word from layer 34 to 41
 (peak ~22 at L41, while "8" is ~2), then "8" takes over in the last layers.
 
+Gemma 4 31B-it with the `solarkyle` lens (`gemma-4-31b-it/lens.pt`), on one RunPod H200: loads with
+`JacobianLens.load` as-is, and `AutoModelForCausalLM` loads every Gemma weight (no missing keys), so
+the image-text-to-text fallback in `scripts/lens_positions.py` was not needed. Brew, chain-9 and
+multi-hop together took under 3 minutes. Per-position readouts (`scripts/lens_positions.py`) for
+both 27B/31B runs are in `data/positions/`; reports are linked from the root README.
+
 ## Suggested next run
 
-Qwen 3.6 27B with the `camilablank` J-lens and R-lens, compared against the Neuronpedia run already
-done. The R-lens targets the early-layer noise seen above. Needs the loading change noted above.
+- Gemma 4 31B-it is the smallest open model that does two-stir brew (15/20 via OpenRouter; every
+  other open model tried, up to DeepSeek V4 Pro, is at 2-7/20). No bigger lens is needed to study
+  two-step serial computation; a three-step-capable open model has not been found.
+- Qwen 3.6 27B with the `camilablank` J-lens and R-lens, compared against the Neuronpedia run. The
+  R-lens targets early-layer noise. Needs the loading change noted above.
