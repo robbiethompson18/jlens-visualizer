@@ -1,0 +1,584 @@
+{
+ "items": [
+  {
+   "name": "chain9-d1-00",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 1 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "7",
+   "start": "1",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-01",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 9 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "9",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-02",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "7",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-03",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 8.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "4",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-04",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 6 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "6",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-05",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "7",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-06",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 2.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "3",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-07",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 8.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "2",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-08",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 7.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "2",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-09",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "7",
+   "start": "8",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-10",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "8",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-11",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 1 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 3.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "1",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-12",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "8",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-13",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "4",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-14",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 1.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "4",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-15",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 1 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 8.\nWhat is the final number?\nAnswer: ",
+   "target": "9",
+   "start": "1",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-16",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "7",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-17",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "3",
+   "start": "5",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-18",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "2",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d1-19",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "7",
+   "intermediates": [],
+   "depth": 1
+  },
+  {
+   "name": "chain9-d2-00",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is even, halve it; if it is odd, add 1.\nWhat is the final number?\nAnswer: ",
+   "target": "6",
+   "start": "8",
+   "intermediates": [
+    "5"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-01",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is even, halve it; if it is odd, add 3.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "5",
+   "intermediates": [
+    "1"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-02",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 9 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 4; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "9",
+   "intermediates": [
+    "5"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-03",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 1 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 8.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "6",
+   "start": "1",
+   "intermediates": [
+    "9"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-04",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 5.\nIf it is even, halve it; if it is odd, add 5.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "8",
+   "intermediates": [
+    "4"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-05",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 3.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "8",
+   "intermediates": [
+    "7"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-06",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nIf it is bigger than 5, subtract 4; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "6",
+   "start": "5",
+   "intermediates": [
+    "3"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-07",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 1 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 7.\nIf it is bigger than 5, subtract 4; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "1",
+   "intermediates": [
+    "8"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-08",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 6 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 1.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "6",
+   "intermediates": [
+    "3"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-09",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is bigger than 5, subtract 1; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "7",
+   "intermediates": [
+    "6"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-10",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "3",
+   "intermediates": [
+    "2"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-11",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "8",
+   "intermediates": [
+    "7"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-12",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "4",
+   "intermediates": [
+    "2"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-13",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nIf it is even, halve it; if it is odd, add 7.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "7",
+   "intermediates": [
+    "4"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-14",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 6.\nIf it is even, halve it; if it is odd, add 1.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "7",
+   "intermediates": [
+    "4"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-15",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 6.\nIf it is even, halve it; if it is odd, add 2.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "7",
+   "intermediates": [
+    "4"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-16",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "8",
+   "intermediates": [
+    "4"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-17",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "4",
+   "intermediates": [
+    "2"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-18",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 2; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "3",
+   "intermediates": [
+    "6"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d2-19",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 5.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "5",
+   "intermediates": [
+    "1"
+   ],
+   "depth": 2
+  },
+  {
+   "name": "chain9-d3-00",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 3.\nHalve it, rounding up.\nIf it is even, halve it; if it is odd, add 7.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "8",
+   "intermediates": [
+    "4",
+    "2"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-01",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 7.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "7",
+   "intermediates": [
+    "5",
+    "1"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-02",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is even, halve it; if it is odd, add 8.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "7",
+   "intermediates": [
+    "4",
+    "2"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-03",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nIf it is bigger than 5, subtract 3; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "7",
+   "intermediates": [
+    "4",
+    "8"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-04",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 6 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 8.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "6",
+   "intermediates": [
+    "5",
+    "4"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-05",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nIf it is even, halve it; if it is odd, add 5.\nIf it is even, halve it; if it is odd, add 8.\nWhat is the final number?\nAnswer: ",
+   "target": "3",
+   "start": "2",
+   "intermediates": [
+    "1",
+    "6"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-06",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 2.\nIf it is bigger than 5, subtract 4; otherwise double it.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "5",
+   "intermediates": [
+    "7",
+    "3"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-07",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 8 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is even, halve it; if it is odd, add 2.\nWhat is the final number?\nAnswer: ",
+   "target": "3",
+   "start": "8",
+   "intermediates": [
+    "5",
+    "1"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-08",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 3; otherwise double it.\nIf it is bigger than 5, subtract 4; otherwise double it.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "3",
+   "intermediates": [
+    "6",
+    "2"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-09",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is even, halve it; if it is odd, add 8.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "1",
+   "start": "7",
+   "intermediates": [
+    "3",
+    "2"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-10",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 2.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "7",
+   "intermediates": [
+    "6",
+    "3"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-11",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 5.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 7.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "3",
+   "intermediates": [
+    "8",
+    "7"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-12",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 9 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is even, halve it; if it is odd, add 5.\nHalve it, rounding up.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "9",
+   "intermediates": [
+    "8",
+    "4"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-13",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 3 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 7.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 1; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "4",
+   "start": "3",
+   "intermediates": [
+    "1",
+    "2"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-14",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 5 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nHalve it, rounding up.\nIf it is bigger than 5, subtract 1; otherwise double it.\nIf it is bigger than 5, subtract 4; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "5",
+   "intermediates": [
+    "3",
+    "6"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-15",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 4 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 3.\nIf it is even, halve it; if it is odd, add 1.\nIf it is even, halve it; if it is odd, add 2.\nWhat is the final number?\nAnswer: ",
+   "target": "3",
+   "start": "4",
+   "intermediates": [
+    "2",
+    "1"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-16",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 9 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 7.\nHalve it, rounding up.\nIf it is even, halve it; if it is odd, add 6.\nWhat is the final number?\nAnswer: ",
+   "target": "2",
+   "start": "9",
+   "intermediates": [
+    "7",
+    "4"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-17",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 2.\nIf it is even, halve it; if it is odd, add 6.\nIf it is bigger than 5, subtract 1; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "5",
+   "start": "7",
+   "intermediates": [
+    "9",
+    "6"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-18",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is even, halve it; if it is odd, add 3.\nIf it is even, halve it; if it is odd, add 3.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "8",
+   "start": "2",
+   "intermediates": [
+    "1",
+    "4"
+   ],
+   "depth": 3
+  },
+  {
+   "name": "chain9-d3-19",
+   "prompt": "You will be shown a starting number and a list of steps. Answer immediately using the format 'Answer: [ANSWER]' where [ANSWER] is a single number, nothing else.\n\nStart with the number 2 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 4; otherwise double it.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: 8\n\nStart with the number 7 and apply the steps in order. After every step, if the number is bigger than 9, subtract 9; if it is smaller than 1, add 9.\nIf it is bigger than 5, subtract 2; otherwise double it.\nIf it is even, halve it; if it is odd, add 7.\nIf it is bigger than 5, subtract 2; otherwise double it.\nWhat is the final number?\nAnswer: ",
+   "target": "6",
+   "start": "7",
+   "intermediates": [
+    "5",
+    "3"
+   ],
+   "depth": 3
+  }
+ ]
+}
