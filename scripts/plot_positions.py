@@ -107,16 +107,16 @@ def plot_summary(correct_items: list[dict]) -> Path:
         items = [item for item in correct_items if item.get("depth", 0) == depth]
         roles = list(dict.fromkeys(series["role"] for item in items for series in item["words"].values()))
         for role in roles:
-            per_item = [
-                [layer_ranks[-1] + 1 for layer_ranks in series["rank"]] for item in items for series in item["words"].values() if series["role"] == role
-            ]
+            role_series = [series for item in items for series in item["words"].values() if series["role"] == role]
+            per_item = [[layer_ranks[-1] + 1 for layer_ranks in series["rank"]] for series in role_series]
             medians = [statistics.median(ranks[index] for ranks in per_item) for index in range(len(layers))]
             ax.plot(layers, medians, color=ROLE_COLORS[role], linewidth=2.2, label=f"{role} (n={len(per_item)})")
         setup_rank_axis(ax)
         ax.set_title(f"depth {depth}" if depth else "all correct items", color=INK, fontsize=11, loc="left")
         ax.set_xlabel("layer", color=MUTED_INK, fontsize=9)
         ax.legend(frameon=False, fontsize=8, labelcolor=INK, loc="lower left")
-    fig.suptitle(f"{readout_path.stem}, {model_label}: median J-lens rank at the token before the answer", color=INK, fontsize=12, x=0.01, ha="left")
+    title = f"{readout_path.stem}, {model_label}: median J-lens rank at the token before the answer"
+    fig.suptitle(title, color=INK, fontsize=12, x=0.01, ha="left")
     fig.tight_layout()
     path = output_dir / "summary.png"
     fig.savefig(path, dpi=100)
